@@ -19,303 +19,287 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&amp;family=Figtree:wght@400;500;600&amp;family=JetBrains+Mono:wght@500&amp;display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&amp;family=Figtree:wght@400;500;600&amp;family=JetBrains+Mono:wght@500;700&amp;display=swap">
 <style>
+:root{--bg:#0d1626;--bg2:#101a2d;--card:#152137;--line:#1e2c47;--line2:#243554;--line3:#344a74;--tx:#f1f5fc;--tx2:#c7d3e8;--tx3:#a6b6d2;--amb:#f2a93b;--yel:#ffd400}
 html{scroll-behavior:smooth}
-body{margin:0;background:#0d1626}
+body{margin:0;background:var(--bg);color:var(--tx);font-family:'Figtree',system-ui,sans-serif;font-size:17px;line-height:1.6}
 *{box-sizing:border-box}
-a{color:#f2a93b;text-decoration:none}
+a{color:var(--amb);text-decoration:none}
 a:hover{color:#ffc56b}
-a:focus-visible{outline:2px solid #f2a93b;outline-offset:3px;border-radius:6px}
+a:focus-visible,button:focus-visible{outline:2px solid var(--amb);outline-offset:3px;border-radius:6px}
 section[id]{scroll-margin-top:16px}
 img{max-width:100%}
+code{font-family:'JetBrains Mono',monospace;font-size:14px;color:#d0dbee}
+.wrap{max-width:1200px;margin:0 auto;padding-left:24px;padding-right:24px}
+.band{background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.kicker{margin:0 0 12px;font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--amb)}
+.h2big{margin:0 0 16px;font-family:'Space Grotesk',sans-serif;font-size:clamp(32px,4vw,48px);line-height:1.1;letter-spacing:-.02em;max-width:760px}
+.sub{margin:0;color:var(--tx2);max-width:720px}
+.grid{display:grid;gap:20px}
+.card{background:var(--card);border:1px solid var(--line2);border-radius:16px;padding:28px}
+.card h3{margin:16px 0 8px;font-family:'Space Grotesk',sans-serif;font-size:21px;line-height:1.25}
+.card p{margin:0;color:var(--tx2);font-size:16px}
+.btn{font-weight:600;font-size:17px;padding:14px 26px;border-radius:12px;min-height:52px;display:inline-flex;align-items:center;gap:10px}
+.btn-a{background:var(--amb);color:#1a1206}.btn-a:hover{color:#1a1206;background:#ffbb55}
+.btn-b{color:var(--tx);border:1px solid var(--line3)}.btn-b:hover{color:var(--tx);border-color:var(--amb)}
+.shot{display:block;width:100%;height:auto;border-radius:14px;border:1px solid #2a3c5f;box-shadow:0 24px 80px rgba(0,0,0,.5)}
+.row{display:flex;flex-wrap:wrap;gap:40px 56px;align-items:center;margin-bottom:96px}
+.row h3{margin:0 0 12px;font-family:'Space Grotesk',sans-serif;font-size:28px;letter-spacing:-.01em}
+.row p{margin:0;color:var(--tx2)}
+.txt{flex:1 1 300px;min-width:0}
+.fig{flex:2 1 560px;min-width:0;margin:0}
+
+/* ---------- cabecera ---------- */
+header{border-bottom:1px solid var(--line);background:var(--bg);position:relative;z-index:20}
+nav.top{max-width:1200px;margin:0 auto;padding:18px 24px;display:flex;flex-wrap:wrap;align-items:center;gap:16px 28px}
+.brand{display:flex;align-items:center;gap:12px;color:var(--tx)}
+.brand:hover{color:var(--tx)}
+.logo{width:40px;height:40px;border-radius:11px;background:rgba(242,169,59,.14);border:1px solid rgba(242,169,59,.5);display:flex;align-items:center;justify-content:center}
+.brand b{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:20px;letter-spacing:-.01em}
+.links{display:flex;flex-wrap:wrap;gap:8px 26px;flex:1 1 auto;justify-content:flex-end;align-items:center;font-size:15px}
+.links a.l{color:var(--tx2)}.links a.l:hover{color:var(--amb)}
+.links a.cta{background:var(--amb);color:#1a1206;font-weight:600;padding:10px 18px;border-radius:10px;min-height:44px;display:inline-flex;align-items:center}
+
+/* ---------- selector de idioma ---------- */
+.lang{position:relative}
+.lang-btn{display:inline-flex;align-items:center;gap:9px;min-height:44px;padding:8px 12px;border-radius:10px;border:1px solid var(--line3);background:#121e33;color:var(--tx);font:500 15px 'Figtree',system-ui,sans-serif;cursor:pointer}
+.lang-btn:hover{border-color:var(--amb)}
+.flag{width:24px;height:16px;border-radius:3px;flex:none;display:block;box-shadow:0 0 0 1px rgba(255,255,255,.18)}
+.lang-menu{position:absolute;right:0;top:calc(100% + 8px);min-width:210px;margin:0;padding:6px;list-style:none;background:#121e33;border:1px solid var(--line3);border-radius:12px;box-shadow:0 20px 60px rgba(0,0,0,.6);display:none}
+.lang.open .lang-menu{display:block}
+.lang-menu button{width:100%;display:flex;align-items:center;gap:12px;padding:10px 12px;border:0;border-radius:8px;background:none;color:var(--tx);font:500 15px 'Figtree',system-ui,sans-serif;cursor:pointer;text-align:left}
+.lang-menu button:hover,.lang-menu button:focus-visible{background:#1c2b47;outline:none}
+.lang-menu button[aria-checked="true"]{color:var(--amb)}
+.lang-menu button[aria-checked="true"]::after{content:"✓";margin-left:auto}
+
+/* ---------- contadores ---------- */
+.stats{max-width:1200px;margin:0 auto;padding:8px 24px 80px}
+.stats-box{border-radius:22px;border:2px solid var(--yel);background:#000;padding:clamp(24px,4vw,44px);display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:32px 48px;align-items:center;box-shadow:0 0 0 6px rgba(255,212,0,.08),0 30px 90px rgba(0,0,0,.6)}
+.stat-label{margin:0 0 14px;font-family:'JetBrains Mono',monospace;font-size:14px;letter-spacing:.12em;text-transform:uppercase;color:var(--yel);display:flex;align-items:center;gap:10px}
+.digits{display:flex;flex-wrap:wrap;gap:8px}
+.digit{width:clamp(40px,6.6vw,80px);height:clamp(58px,9.4vw,112px);display:flex;align-items:center;justify-content:center;background:#000;border:2px solid #3a3a3a;border-radius:10px;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:clamp(34px,5.8vw,72px);color:var(--yel);text-shadow:0 0 14px rgba(255,212,0,.55);box-shadow:inset 0 -3px 0 rgba(255,212,0,.15),inset 0 2px 8px rgba(255,255,255,.06);position:relative;overflow:hidden}
+.digit::after{content:"";position:absolute;left:0;right:0;top:50%;height:1px;background:rgba(255,255,255,.08)}
+.digits.sm .digit{width:clamp(30px,3.6vw,40px);height:clamp(42px,5vw,56px);font-size:clamp(24px,3vw,34px);border-radius:8px}
+.dl-stats{display:flex;flex-direction:column;gap:22px}
+.dl-row{display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px}
+.dl-name{display:flex;align-items:center;gap:10px;min-width:118px;font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:19px;color:#fff}
+.stats-note{grid-column:1/-1;margin:0;color:#9a9a9a;font-size:14px;border-top:1px solid #262626;padding-top:16px}
+@media (max-width:820px){.stats-box{grid-template-columns:1fr}}
+
+footer{border-top:1px solid var(--line)}
+footer b{color:var(--tx)}
 </style>
 </head>
 <body>
-<div style="background: #0d1626; color: #f1f5fc; font-family: 'Figtree', system-ui, sans-serif; font-size: 17px; line-height: 1.6; min-height: 100%">
 
 <!-- ============================ CABECERA ============================ -->
-<header style="position: relative; border-bottom: 1px solid #1e2c47; background: #0d1626">
-<nav style="max-width: 1200px; margin: 0 auto; padding: 18px 24px; display: flex; flex-wrap: wrap; align-items: center; gap: 16px 32px">
-<a href="#inicio" style="display: flex; align-items: center; gap: 12px; color: #f1f5fc">
-<span style="width: 40px; height: 40px; border-radius: 11px; background: rgba(242,169,59,0.14); border: 1px solid rgba(242,169,59,0.5); display: flex; align-items: center; justify-content: center">
-<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f2a93b" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="4"></rect><path d="M7 10v4M5 12h4"></path><circle cx="16" cy="11" r="1"></circle><circle cx="18.5" cy="13.5" r="1"></circle></svg>
-</span>
-<span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 20px; letter-spacing: -0.01em">KukoScrapingFree</span>
+<header>
+<nav class="top">
+<a href="#inicio" class="brand">
+<span class="logo"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f2a93b" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="4"></rect><path d="M7 10v4M5 12h4"></path><circle cx="16" cy="11" r="1"></circle><circle cx="18.5" cy="13.5" r="1"></circle></svg></span>
+<b>KukoScrapingFree</b>
 </a>
-<div style="display: flex; flex-wrap: wrap; gap: 8px 28px; flex: 1 1 auto; justify-content: flex-end; align-items: center; font-size: 15px">
-<a href="#funciones" style="color: #c7d3e8">Funciones</a>
-<a href="#capturas" style="color: #c7d3e8">Capturas</a>
-<a href="#como-funciona" style="color: #c7d3e8">Cómo funciona</a>
-<a href="#preguntas" style="color: #c7d3e8">Preguntas</a>
-<a href="#descargar" style="background: #f2a93b; color: #1a1206; font-weight: 600; padding: 10px 18px; border-radius: 10px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center">Descargar gratis</a>
+<div class="links">
+<a class="l" href="#funciones" data-t="nav_features">Funciones</a>
+<a class="l" href="#capturas" data-t="nav_shots">Capturas</a>
+<a class="l" href="#como-funciona" data-t="nav_how">Cómo funciona</a>
+<a class="l" href="#preguntas" data-t="nav_faq">Preguntas</a>
+<div class="lang" id="lang">
+<button type="button" class="lang-btn" id="lang-btn" aria-haspopup="true" aria-expanded="false" title="Idioma" data-title="lang_label">
+<span id="lang-flag"></span><span id="lang-name">Español</span>
+<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg>
+</button>
+<ul class="lang-menu" id="lang-menu" role="menu"></ul>
+</div>
+<a class="cta" href="#descargar" data-t="nav_download">Descargar gratis</a>
 </div>
 </nav>
 </header>
 
 <!-- ============================ PORTADA ============================ -->
-<section id="inicio" style="max-width: 1200px; margin: 0 auto; padding: 88px 24px 40px; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 24px">
-<span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #f2a93b; border: 1px solid rgba(242,169,59,0.45); border-radius: 999px; padding: 6px 14px">Scraper de ROMs para Batocera Linux</span>
-<h1 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(40px, 6vw, 72px); line-height: 1.04; letter-spacing: -0.03em; max-width: 920px">Tu colección retro, con sus carátulas, logos, vídeos y fichas.</h1>
-<p style="margin: 0; font-size: clamp(17px, 2vw, 21px); color: #c7d3e8; max-width: 760px">KukoScrapingFree busca cada juego en ScreenScraper, descarga sus datos e imágenes en tu idioma y los deja listos para Batocera. Sin tocar nunca tu carpeta de ROMs.</p>
-<div style="display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; margin-top: 8px">
-<a href="#descargar" style="background: #f2a93b; color: #1a1206; font-weight: 600; font-size: 17px; padding: 14px 26px; border-radius: 12px; min-height: 52px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 10px">
-<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1a1206" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 10l5 5 5-5M4 21h16"></path></svg>
-Descargar gratis</a>
-<a href="#como-funciona" style="color: #f1f5fc; font-weight: 600; font-size: 17px; padding: 14px 26px; border-radius: 12px; border: 1px solid #344a74; min-height: 52px; box-sizing: border-box; display: inline-flex; align-items: center">Cómo funciona</a>
+<section id="inicio" class="wrap" style="padding-top:88px;padding-bottom:40px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:24px">
+<span style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:#f2a93b;border:1px solid rgba(242,169,59,.45);border-radius:999px;padding:6px 14px" data-t="hero_tag">Scraper de ROMs para Batocera Linux</span>
+<h1 style="margin:0;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(40px,6vw,72px);line-height:1.04;letter-spacing:-.03em;max-width:920px" data-t="hero_title">Tu colección retro, con sus carátulas, logos, vídeos y fichas.</h1>
+<p style="margin:0;font-size:clamp(17px,2vw,21px);color:#c7d3e8;max-width:760px" data-t="hero_sub">KukoScrapingFree busca cada juego en ScreenScraper, descarga sus datos e imágenes en tu idioma y los deja listos para Batocera. Sin tocar nunca tu carpeta de ROMs.</p>
+<div style="display:flex;flex-wrap:wrap;gap:14px;justify-content:center;margin-top:8px">
+<a href="#descargar" class="btn btn-a"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1a1206" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 10l5 5 5-5M4 21h16"></path></svg><span data-t="btn_download">Descargar gratis</span></a>
+<a href="#como-funciona" class="btn btn-b" data-t="btn_how">Cómo funciona</a>
 </div>
-<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px 24px; font-size: 15px; color: #a6b6d2; margin-top: 4px">
-<span>100 % gratuito</span><span style="color: #344a74">·</span>
-<span>Windows y Linux</span><span style="color: #344a74">·</span>
-<span>7 idiomas</span><span style="color: #344a74">·</span>
-<span>256 sistemas de Batocera</span>
+<div style="display:flex;flex-wrap:wrap;justify-content:center;gap:10px 24px;font-size:15px;color:#a6b6d2;margin-top:4px">
+<span data-t="badge_free">100 % gratuito</span><span style="color:#344a74">·</span>
+<span data-t="badge_os">Windows y Linux</span><span style="color:#344a74">·</span>
+<span data-t="badge_langs">7 idiomas</span><span style="color:#344a74">·</span>
+<span data-t="badge_systems">256 sistemas de Batocera</span>
 </div>
 </section>
 
-<section style="max-width: 1240px; margin: 0 auto; padding: 24px 24px 96px">
-<div style="border-radius: 18px; border: 1px solid #2a3c5f; background: #101a2d; padding: 10px; box-shadow: 0 40px 120px rgba(0,0,0,0.55)">
-<div style="display: flex; gap: 7px; padding: 4px 6px 10px">
-<span style="width: 11px; height: 11px; border-radius: 50%; background: #344a74"></span>
-<span style="width: 11px; height: 11px; border-radius: 50%; background: #344a74"></span>
-<span style="width: 11px; height: 11px; border-radius: 50%; background: #344a74"></span>
+<!-- ============================ CONTADORES ============================ -->
+<section class="stats" aria-live="polite">
+<div class="stats-box">
+<div>
+<p class="stat-label"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"></path><circle cx="12" cy="12" r="3"></circle></svg><span data-t="stats_visits">Visitas a la web</span></p>
+<div class="digits" id="cnt-visitas" data-min="6"></div>
 </div>
-<img width="1916" height="1076" decoding="async" src="imagenes/principal.webp" alt="Ventana principal de KukoScrapingFree con la lista de sistemas, los juegos de Super Nintendo y el estado de cada uno" style="display: block; width: 100%; height: auto; border-radius: 10px">
+<div class="dl-stats">
+<p class="stat-label" style="margin:0"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M4 21h16"></path></svg><span data-t="stats_downloads">Descargas</span></p>
+<div class="dl-row">
+<span class="dl-name"><svg width="20" height="20" viewBox="0 0 24 24" fill="#ffd400" aria-hidden="true"><path d="M3 5.5l7.5-1v7H3zM11.5 4.4L21 3v8.5h-9.5zM3 12.5h7.5v7L3 18.5zM11.5 12.5H21V21l-9.5-1.4z"></path></svg><span data-t="stats_win">Windows</span></span>
+<div class="digits sm" id="cnt-windows" data-min="4"></div>
+</div>
+<div class="dl-row">
+<span class="dl-name"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ffd400" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c-2.2 0-3 1.8-3 4 0 1.5-.4 2.6-1.4 4C6.3 12.8 5 15 5.6 17.5 6 19 7.5 20 9 20c1 0 2-.6 3-.6s2 .6 3 .6c1.5 0 3-1 3.4-2.5.6-2.5-.7-4.7-2-6.5-1-1.4-1.4-2.5-1.4-4 0-2.2-.8-4-3-4z"></path><circle cx="10.5" cy="7.5" r=".6" fill="#ffd400"></circle><circle cx="13.5" cy="7.5" r=".6" fill="#ffd400"></circle><path d="M10.8 9.6l1.2.8 1.2-.8"></path></svg><span data-t="stats_linux">Linux</span></span>
+<div class="digits sm" id="cnt-linux" data-min="4"></div>
+</div>
+</div>
+<p class="stats-note" data-t="stats_note">Las descargas se cuentan en tiempo real desde GitHub.</p>
+</div>
+</section>
+
+<section class="wrap" style="max-width:1240px;padding-top:8px;padding-bottom:96px">
+<div style="border-radius:18px;border:1px solid #2a3c5f;background:#101a2d;padding:10px;box-shadow:0 40px 120px rgba(0,0,0,.55)">
+<div style="display:flex;gap:7px;padding:4px 6px 10px">
+<span style="width:11px;height:11px;border-radius:50%;background:#344a74"></span>
+<span style="width:11px;height:11px;border-radius:50%;background:#344a74"></span>
+<span style="width:11px;height:11px;border-radius:50%;background:#344a74"></span>
+</div>
+<img width="1916" height="1076" decoding="async" src="imagenes/principal.webp" data-alt="alt_main" alt="Ventana principal de KukoScrapingFree con la lista de sistemas y los juegos de Super Nintendo" style="display:block;width:100%;height:auto;border-radius:10px">
 </div>
 </section>
 
 <!-- ============================ GRATIS ============================ -->
-<section style="max-width: 1200px; margin: 0 auto; padding: 0 24px 104px">
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px">
-<div style="background: rgba(69,216,196,0.08); border: 1px solid rgba(69,216,196,0.45); border-radius: 16px; padding: 28px 30px; display: flex; gap: 18px; align-items: flex-start">
-<span style="flex: none; width: 44px; height: 44px; border-radius: 22px; background: rgba(69,216,196,0.16); display: flex; align-items: center; justify-content: center">
-<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#45d8c4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="4" rx="1"></rect><path d="M5 12v8h14v-8M12 8v12M12 8c-1.5-3.5-6-3.5-5 0M12 8c1.5-3.5 6-3.5 5 0"></path></svg>
-</span>
+<section class="wrap" style="padding-bottom:104px">
+<div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(300px,1fr))">
+<div style="background:rgba(69,216,196,.08);border:1px solid rgba(69,216,196,.45);border-radius:16px;padding:28px 30px;display:flex;gap:18px;align-items:flex-start">
+<span style="flex:none;width:44px;height:44px;border-radius:22px;background:rgba(69,216,196,.16);display:flex;align-items:center;justify-content:center"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#45d8c4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="4" rx="1"></rect><path d="M5 12v8h14v-8M12 8v12M12 8c-1.5-3.5-6-3.5-5 0M12 8c1.5-3.5 6-3.5 5 0"></path></svg></span>
 <div>
-<h2 style="margin: 0 0 6px; font-family: 'Space Grotesk', sans-serif; font-size: 22px; color: #45d8c4">Gratis de verdad, y para siempre</h2>
-<p style="margin: 0; color: #d0dbee">Sin anuncios, sin suscripciones y sin funciones de pago. Puedes usarlo, copiarlo y compartirlo con quien quieras.</p>
+<h2 style="margin:0 0 6px;font-family:'Space Grotesk',sans-serif;font-size:22px;color:#45d8c4" data-t="free_title">Gratis de verdad, y para siempre</h2>
+<p style="margin:0;color:#d0dbee" data-t="free_text">Sin anuncios, sin suscripciones y sin funciones de pago. Puedes usarlo, copiarlo y compartirlo con quien quieras.</p>
 </div>
 </div>
-<div style="background: rgba(242,169,59,0.08); border: 1px solid rgba(242,169,59,0.5); border-radius: 16px; padding: 28px 30px; display: flex; gap: 18px; align-items: flex-start">
-<span style="flex: none; width: 44px; height: 44px; border-radius: 22px; background: rgba(242,169,59,0.16); display: flex; align-items: center; justify-content: center">
-<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#f2a93b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l9.5 17h-19z"></path><path d="M12 10v4.5M12 17.5h.01"></path></svg>
-</span>
+<div style="background:rgba(242,169,59,.08);border:1px solid rgba(242,169,59,.5);border-radius:16px;padding:28px 30px;display:flex;gap:18px;align-items:flex-start">
+<span style="flex:none;width:44px;height:44px;border-radius:22px;background:rgba(242,169,59,.16);display:flex;align-items:center;justify-content:center"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#f2a93b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l9.5 17h-19z"></path><path d="M12 10v4.5M12 17.5h.01"></path></svg></span>
 <div>
-<h2 style="margin: 0 0 6px; font-family: 'Space Grotesk', sans-serif; font-size: 22px; color: #f2a93b">¿Te lo han cobrado?</h2>
-<p style="margin: 0; color: #d0dbee">Entonces te han estafado. KukoScrapingFree no se vende nunca. Descárgalo solo desde esta web y reclama tu dinero a quien te lo vendió.</p>
+<h2 style="margin:0 0 6px;font-family:'Space Grotesk',sans-serif;font-size:22px;color:#f2a93b" data-t="scam_title">¿Te lo han cobrado?</h2>
+<p style="margin:0;color:#d0dbee" data-t="scam_text">Entonces te han estafado. KukoScrapingFree no se vende nunca. Descárgalo solo desde esta web y reclama tu dinero a quien te lo vendió.</p>
 </div>
 </div>
 </div>
 </section>
 
 <!-- ============================ FUNCIONES ============================ -->
-<section id="funciones" style="background: #101a2d; border-top: 1px solid #1e2c47; border-bottom: 1px solid #1e2c47">
-<div style="max-width: 1200px; margin: 0 auto; padding: 104px 24px">
-<p style="margin: 0 0 12px; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #f2a93b">Funciones</p>
-<h2 style="margin: 0 0 16px; font-family: 'Space Grotesk', sans-serif; font-size: clamp(32px, 4vw, 48px); line-height: 1.1; letter-spacing: -0.02em; max-width: 760px">Todo lo que necesita tu Batocera, en un solo programa</h2>
-<p style="margin: 0 0 56px; color: #c7d3e8; max-width: 720px">Pensado para colecciones grandes y para quien no quiere pelearse con ficheros XML.</p>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px">
-
-<article style="background: #152137; border: 1px solid #243554; border-radius: 16px; padding: 28px">
-<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#f2a93b" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7V5a2 2 0 0 1 2-2h2M17 3h2a2 2 0 0 1 2 2v2M21 17v2a2 2 0 0 1-2 2h-2M7 21H5a2 2 0 0 1-2-2v-2M7 12h10"></path></svg>
-<h3 style="margin: 16px 0 8px; font-family: 'Space Grotesk', sans-serif; font-size: 21px">Reconoce tu colección</h3>
-<p style="margin: 0; color: #c7d3e8; font-size: 16px">Detecta los 256 sistemas de Batocera por el nombre de sus carpetas, en tu equipo o en red. Agrupa los juegos de varios discos y aparta las BIOS.</p>
-</article>
-
-<article style="background: #152137; border: 1px solid #243554; border-radius: 16px; padding: 28px">
-<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#f2a93b" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 9h14M5 15h14M10 3L8 21M16 3l-2 18"></path></svg>
-<h3 style="margin: 16px 0 8px; font-family: 'Space Grotesk', sans-serif; font-size: 21px">Encuentra el juego exacto</h3>
-<p style="margin: 0; color: #c7d3e8; font-size: 16px">Calcula la huella de cada ROM (CRC32, MD5 y SHA1) para que ScreenScraper la identifique sin dudas, aunque el fichero tenga un nombre raro.</p>
-</article>
-
-<article style="background: #152137; border: 1px solid #243554; border-radius: 16px; padding: 28px">
-<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#f2a93b" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18M12 3c3 3.5 3 14.5 0 18M12 3c-3 3.5-3 14.5 0 18"></path></svg>
-<h3 style="margin: 16px 0 8px; font-family: 'Space Grotesk', sans-serif; font-size: 21px">Tus regiones y tu idioma</h3>
-<p style="margin: 0; color: #c7d3e8; font-size: 16px">Tú decides el orden: España, Europa, Mundial… Las carátulas, los nombres y las fechas salen de tu región preferida, y la sinopsis en tu idioma.</p>
-</article>
-
-<article style="background: #152137; border: 1px solid #243554; border-radius: 16px; padding: 28px">
-<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#f2a93b" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 4.5-3.4 8.2-8 9-4.6-.8-8-4.5-8-9V6z"></path><path d="M8.5 12l2.5 2.5 4.5-5"></path></svg>
-<h3 style="margin: 16px 0 8px; font-family: 'Space Grotesk', sans-serif; font-size: 21px">Tus ROMs, intactas</h3>
-<p style="margin: 0; color: #c7d3e8; font-size: 16px">Todo se guarda en una carpeta de salida aparte. Al copiarla a Batocera se respetan tus partidas jugadas y tus favoritos.</p>
-</article>
-
-<article style="background: #152137; border: 1px solid #243554; border-radius: 16px; padding: 28px">
-<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#f2a93b" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l9 5-9 5-9-5z"></path><path d="M3 13l9 5 9-5"></path></svg>
-<h3 style="margin: 16px 0 8px; font-family: 'Space Grotesk', sans-serif; font-size: 21px">Composiciones a tu gusto</h3>
-<p style="margin: 0; color: #c7d3e8; font-size: 16px">Un editor visual para diseñar la imagen de cada juego: captura, caja 3D, logo y textos, con capas, guías y deshacer.</p>
-</article>
-
-<article style="background: #152137; border: 1px solid #243554; border-radius: 16px; padding: 28px">
-<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#f2a93b" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="13" height="12" rx="2"></rect><path d="M16 10l5-3v10l-5-3"></path></svg>
-<h3 style="margin: 16px 0 8px; font-family: 'Space Grotesk', sans-serif; font-size: 21px">Ficha completa de cada juego</h3>
-<p style="margin: 0; color: #c7d3e8; font-size: 16px">Carátula, galería, vídeo integrado y todos sus datos. Edítalos a mano o vuelve a buscarlos comparando lo nuevo con lo que ya tienes.</p>
-</article>
-
-<article style="background: #152137; border: 1px solid #243554; border-radius: 16px; padding: 28px">
-<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#f2a93b" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4l6 6M9 9l6 6M4 20c1-4 3-8 5-11l6 6c-3 2-7 4-11 5z"></path></svg>
-<h3 style="margin: 16px 0 8px; font-family: 'Space Grotesk', sans-serif; font-size: 21px">Revisar y limpiar</h3>
-<p style="margin: 0; color: #c7d3e8; font-size: 16px">Encuentra juegos sin ROM, imágenes que faltan y ficheros que nadie usa. Nada se borra: lo que sobra se aparta en una carpeta.</p>
-</article>
-
-<article style="background: #152137; border: 1px solid #243554; border-radius: 16px; padding: 28px">
-<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#f2a93b" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 14L4 9l5-5"></path><path d="M4 9h10.5a5.5 5.5 0 0 1 0 11H11"></path></svg>
-<h3 style="margin: 16px 0 8px; font-family: 'Space Grotesk', sans-serif; font-size: 21px">Todo se puede deshacer</h3>
-<p style="margin: 0; color: #c7d3e8; font-size: 16px">Guarda las versiones anteriores de cada gamelist. Vuelve a cualquiera, o al original de Batocera, con un clic.</p>
-</article>
-
-<article style="background: #152137; border: 1px solid #243554; border-radius: 16px; padding: 28px">
-<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#f2a93b" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="8" ry="3"></ellipse><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"></path></svg>
-<h3 style="margin: 16px 0 8px; font-family: 'Space Grotesk', sans-serif; font-size: 21px">Cuida tu cuenta de ScreenScraper</h3>
-<p style="margin: 0; color: #c7d3e8; font-size: 16px">Respeta los límites de tu cuenta y te avisa antes de un scrapeo grande si no te va a llegar la cuota del día.</p>
-</article>
-
+<section id="funciones" class="band">
+<div class="wrap" style="padding-top:104px;padding-bottom:104px">
+<p class="kicker" data-t="feat_kicker">Funciones</p>
+<h2 class="h2big" data-t="feat_title">Todo lo que necesita tu Batocera, en un solo programa</h2>
+<p class="sub" style="margin-bottom:56px" data-t="feat_sub">Pensado para colecciones grandes y para quien no quiere pelearse con ficheros XML.</p>
+<div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(320px,1fr))">
+<article class="card"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#f2a93b" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7V5a2 2 0 0 1 2-2h2M17 3h2a2 2 0 0 1 2 2v2M21 17v2a2 2 0 0 1-2 2h-2M7 21H5a2 2 0 0 1-2-2v-2M7 12h10"></path></svg><h3 data-t="f1_t"></h3><p data-t="f1_d"></p></article>
+<article class="card"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#f2a93b" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 9h14M5 15h14M10 3L8 21M16 3l-2 18"></path></svg><h3 data-t="f2_t"></h3><p data-t="f2_d"></p></article>
+<article class="card"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#f2a93b" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18M12 3c3 3.5 3 14.5 0 18M12 3c-3 3.5-3 14.5 0 18"></path></svg><h3 data-t="f3_t"></h3><p data-t="f3_d"></p></article>
+<article class="card"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#f2a93b" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 4.5-3.4 8.2-8 9-4.6-.8-8-4.5-8-9V6z"></path><path d="M8.5 12l2.5 2.5 4.5-5"></path></svg><h3 data-t="f4_t"></h3><p data-t="f4_d"></p></article>
+<article class="card"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#f2a93b" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l9 5-9 5-9-5z"></path><path d="M3 13l9 5 9-5"></path></svg><h3 data-t="f5_t"></h3><p data-t="f5_d"></p></article>
+<article class="card"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#f2a93b" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="13" height="12" rx="2"></rect><path d="M16 10l5-3v10l-5-3"></path></svg><h3 data-t="f6_t"></h3><p data-t="f6_d"></p></article>
+<article class="card"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#f2a93b" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4l6 6M9 9l6 6M4 20c1-4 3-8 5-11l6 6c-3 2-7 4-11 5z"></path></svg><h3 data-t="f7_t"></h3><p data-t="f7_d"></p></article>
+<article class="card"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#f2a93b" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 14L4 9l5-5"></path><path d="M4 9h10.5a5.5 5.5 0 0 1 0 11H11"></path></svg><h3 data-t="f8_t"></h3><p data-t="f8_d"></p></article>
+<article class="card"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#f2a93b" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="8" ry="3"></ellipse><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"></path></svg><h3 data-t="f9_t"></h3><p data-t="f9_d"></p></article>
 </div>
 </div>
 </section>
 
 <!-- ============================ CAPTURAS ============================ -->
-<section id="capturas" style="max-width: 1200px; margin: 0 auto; padding: 112px 24px 40px">
-<p style="margin: 0 0 12px; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #f2a93b">Capturas</p>
-<h2 style="margin: 0 0 64px; font-family: 'Space Grotesk', sans-serif; font-size: clamp(32px, 4vw, 48px); line-height: 1.1; letter-spacing: -0.02em; max-width: 760px">Así se ve por dentro</h2>
+<section id="capturas" class="wrap" style="padding-top:112px;padding-bottom:40px">
+<p class="kicker" data-t="shots_kicker">Capturas</p>
+<h2 class="h2big" data-t="shots_title">Así se ve por dentro</h2>
+<p class="sub" style="margin-bottom:64px;font-size:15px;color:#a6b6d2" data-t="shots_note"></p>
 
-<div style="display: flex; flex-wrap: wrap; gap: 40px 56px; align-items: center; margin-bottom: 96px">
-<div style="flex: 1 1 300px; min-width: 0">
-<h3 style="margin: 0 0 12px; font-family: 'Space Grotesk', sans-serif; font-size: 28px; letter-spacing: -0.01em">La ficha de cada juego</h3>
-<p style="margin: 0; color: #c7d3e8">Carátula, logo, composición, sinopsis, valoración y todos los datos del juego en una sola pantalla. Si algo no te convence, lo cambias tú.</p>
-</div>
-<figure style="flex: 2 1 560px; min-width: 0; margin: 0">
-<img width="1916" height="1076" loading="lazy" decoding="async" src="imagenes/ficha.webp" alt="Ficha del juego con carátula, sinopsis, galería e información" style="display: block; width: 100%; height: auto; border-radius: 14px; border: 1px solid #2a3c5f; box-shadow: 0 24px 80px rgba(0,0,0,0.5)">
-</figure>
+<div class="row">
+<div class="txt"><h3 data-t="s1_t"></h3><p data-t="s1_d"></p></div>
+<figure class="fig"><img class="shot" width="1916" height="1076" loading="lazy" decoding="async" src="imagenes/ficha.webp" data-alt="alt_sheet" alt=""></figure>
 </div>
 
-<div style="display: flex; flex-wrap: wrap-reverse; gap: 40px 56px; align-items: center; margin-bottom: 96px">
-<figure style="flex: 2 1 560px; min-width: 0; margin: 0">
-<img width="1508" height="880" loading="lazy" decoding="async" src="imagenes/editor.webp" alt="Editor de composiciones con capas, lienzo y propiedades" style="display: block; width: 100%; height: auto; border-radius: 14px; border: 1px solid #2a3c5f; box-shadow: 0 24px 80px rgba(0,0,0,0.5)">
-</figure>
-<div style="flex: 1 1 300px; min-width: 0">
-<h3 style="margin: 0 0 12px; font-family: 'Space Grotesk', sans-serif; font-size: 28px; letter-spacing: -0.01em">El editor de composiciones</h3>
-<p style="margin: 0; color: #c7d3e8">Diseña la imagen que verás en Batocera colocando capas como en un programa de dibujo. Mira el resultado con tus propios juegos antes de aplicarlo a todo el sistema.</p>
-</div>
+<div class="row" style="flex-wrap:wrap-reverse">
+<figure class="fig"><img class="shot" width="1508" height="880" loading="lazy" decoding="async" src="imagenes/editor.webp" data-alt="alt_editor" alt=""></figure>
+<div class="txt"><h3 data-t="s2_t"></h3><p data-t="s2_d"></p></div>
 </div>
 
-<div style="display: flex; flex-wrap: wrap; gap: 40px 56px; align-items: center">
-<div style="flex: 1 1 300px; min-width: 0">
-<h3 style="margin: 0 0 12px; font-family: 'Space Grotesk', sans-serif; font-size: 28px; letter-spacing: -0.01em">Tus preferencias, primero</h3>
-<p style="margin: 0; color: #c7d3e8">Elige y ordena las regiones de las que quieres las carátulas y los nombres. Si tu región no existe, se usa la siguiente de tu lista.</p>
-</div>
-<figure style="flex: 1 1 420px; min-width: 0; margin: 0; display: flex; justify-content: center">
-<img width="906" height="769" loading="lazy" decoding="async" src="imagenes/regiones.webp" alt="Ajustes de regiones con banderas y orden de preferencia" style="display: block; width: 100%; max-width: 620px; height: auto; border-radius: 14px; border: 1px solid #2a3c5f; box-shadow: 0 24px 80px rgba(0,0,0,0.5)">
-</figure>
+<div class="row" style="margin-bottom:0">
+<div class="txt"><h3 data-t="s3_t"></h3><p data-t="s3_d"></p></div>
+<figure class="fig" style="flex:1 1 420px;display:flex;justify-content:center"><img class="shot" style="max-width:620px" width="906" height="769" loading="lazy" decoding="async" src="imagenes/regiones.webp" data-alt="alt_regions" alt=""></figure>
 </div>
 </section>
 
 <!-- ============================ COMPOSICIONES ============================ -->
-<section style="max-width: 1200px; margin: 0 auto; padding: 72px 24px 112px">
-<h2 style="margin: 0 0 12px; font-family: 'Space Grotesk', sans-serif; font-size: clamp(26px, 3vw, 34px); letter-spacing: -0.01em">Composiciones generadas automáticamente</h2>
-<p style="margin: 0 0 32px; color: #c7d3e8; max-width: 720px">Ejemplos creados por el programa con la plantilla «Clásica 4:3» (juegos y carátulas de demostración).</p>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px">
-<img width="640" height="480" loading="lazy" decoding="async" src="imagenes/mix-crystal-sprint.webp" alt="Composición de ejemplo: Crystal Sprint" style="display: block; width: 100%; height: auto; border-radius: 12px; border: 1px solid #243554">
-<img width="640" height="480" loading="lazy" decoding="async" src="imagenes/mix-dragon-valley.webp" alt="Composición de ejemplo: Dragon Valley" style="display: block; width: 100%; height: auto; border-radius: 12px; border: 1px solid #243554">
-<img width="640" height="480" loading="lazy" decoding="async" src="imagenes/mix-neon-drift.webp" alt="Composición de ejemplo: Neon Drift" style="display: block; width: 100%; height: auto; border-radius: 12px; border: 1px solid #243554">
+<section class="wrap" style="padding-top:72px;padding-bottom:112px">
+<h2 style="margin:0 0 12px;font-family:'Space Grotesk',sans-serif;font-size:clamp(26px,3vw,34px);letter-spacing:-.01em" data-t="mix_title"></h2>
+<p class="sub" style="margin-bottom:32px" data-t="mix_sub"></p>
+<div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(280px,1fr))">
+<img width="640" height="480" loading="lazy" decoding="async" src="imagenes/mix-crystal-sprint.webp" data-alt="alt_mix" data-alt-extra="Crystal Sprint" alt="" style="display:block;width:100%;height:auto;border-radius:12px;border:1px solid #243554">
+<img width="640" height="480" loading="lazy" decoding="async" src="imagenes/mix-dragon-valley.webp" data-alt="alt_mix" data-alt-extra="Dragon Valley" alt="" style="display:block;width:100%;height:auto;border-radius:12px;border:1px solid #243554">
+<img width="640" height="480" loading="lazy" decoding="async" src="imagenes/mix-neon-drift.webp" data-alt="alt_mix" data-alt-extra="Neon Drift" alt="" style="display:block;width:100%;height:auto;border-radius:12px;border:1px solid #243554">
 </div>
 </section>
 
 <!-- ============================ CÓMO FUNCIONA ============================ -->
-<section id="como-funciona" style="background: #101a2d; border-top: 1px solid #1e2c47; border-bottom: 1px solid #1e2c47">
-<div style="max-width: 1200px; margin: 0 auto; padding: 104px 24px">
-<p style="margin: 0 0 12px; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #f2a93b">Cómo funciona</p>
-<h2 style="margin: 0 0 56px; font-family: 'Space Grotesk', sans-serif; font-size: clamp(32px, 4vw, 48px); line-height: 1.1; letter-spacing: -0.02em">Cuatro pasos y listo</h2>
-<ol style="list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px">
-<li style="background: #152137; border: 1px solid #243554; border-radius: 16px; padding: 28px">
-<span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 40px; color: #f2a93b; line-height: 1">1</span>
-<h3 style="margin: 14px 0 8px; font-family: 'Space Grotesk', sans-serif; font-size: 20px">Descarga y descomprime</h3>
-<p style="margin: 0; color: #c7d3e8; font-size: 16px">No se instala nada. Todo lo que guarda el programa se queda dentro de su propia carpeta.</p>
-</li>
-<li style="background: #152137; border: 1px solid #243554; border-radius: 16px; padding: 28px">
-<span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 40px; color: #f2a93b; line-height: 1">2</span>
-<h3 style="margin: 14px 0 8px; font-family: 'Space Grotesk', sans-serif; font-size: 20px">Escribe tu cuenta de ScreenScraper</h3>
-<p style="margin: 0; color: #c7d3e8; font-size: 16px">Solo tu usuario y tu contraseña de <a href="https://www.screenscraper.fr">screenscraper.fr</a>. Se guardan cifrados en tu equipo.</p>
-</li>
-<li style="background: #152137; border: 1px solid #243554; border-radius: 16px; padding: 28px">
-<span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 40px; color: #f2a93b; line-height: 1">3</span>
-<h3 style="margin: 14px 0 8px; font-family: 'Space Grotesk', sans-serif; font-size: 20px">Elige tu carpeta de ROMs</h3>
-<p style="margin: 0; color: #c7d3e8; font-size: 16px">En tu disco o directamente en la red, como <span style="font-family: 'JetBrains Mono', monospace; font-size: 14px; color: #d0dbee">\\BATOCERA\share\roms</span>. Un asistente te guía al empezar.</p>
-</li>
-<li style="background: #152137; border: 1px solid #243554; border-radius: 16px; padding: 28px">
-<span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 40px; color: #f2a93b; line-height: 1">4</span>
-<h3 style="margin: 14px 0 8px; font-family: 'Space Grotesk', sans-serif; font-size: 20px">Scrapea y copia a Batocera</h3>
-<p style="margin: 0; color: #c7d3e8; font-size: 16px">Marca los sistemas, pulsa «Scrapear selección» y, al terminar, copia la carpeta de salida a tu Batocera.</p>
-</li>
+<section id="como-funciona" class="band">
+<div class="wrap" style="padding-top:104px;padding-bottom:104px">
+<p class="kicker" data-t="how_kicker">Cómo funciona</p>
+<h2 class="h2big" style="margin-bottom:56px" data-t="how_title">Cuatro pasos y listo</h2>
+<ol class="grid" style="list-style:none;margin:0;padding:0;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))">
+<li class="card"><span style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:40px;color:#f2a93b;line-height:1">1</span><h3 style="margin-top:14px" data-t="h1_t"></h3><p data-t="h1_d"></p></li>
+<li class="card"><span style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:40px;color:#f2a93b;line-height:1">2</span><h3 style="margin-top:14px" data-t="h2_t"></h3><p data-h="h2_d"></p></li>
+<li class="card"><span style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:40px;color:#f2a93b;line-height:1">3</span><h3 style="margin-top:14px" data-t="h3_t"></h3><p data-h="h3_d"></p></li>
+<li class="card"><span style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:40px;color:#f2a93b;line-height:1">4</span><h3 style="margin-top:14px" data-t="h4_t"></h3><p data-t="h4_d"></p></li>
 </ol>
 </div>
 </section>
 
 <!-- ============================ PREGUNTAS ============================ -->
-<section id="preguntas" style="max-width: 920px; margin: 0 auto; padding: 112px 24px 104px">
-<p style="margin: 0 0 12px; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #f2a93b">Preguntas frecuentes</p>
-<h2 style="margin: 0 0 40px; font-family: 'Space Grotesk', sans-serif; font-size: clamp(32px, 4vw, 48px); line-height: 1.1; letter-spacing: -0.02em">Lo que suele preguntarse</h2>
-<div style="display: flex; flex-direction: column; gap: 0; border-top: 1px solid #243554">
-<div style="padding: 24px 0; border-bottom: 1px solid #243554">
-<h3 style="margin: 0 0 8px; font-family: 'Space Grotesk', sans-serif; font-size: 20px">¿Cuánto cuesta?</h3>
-<p style="margin: 0; color: #c7d3e8">Nada. Es freeware: gratuito y de libre distribución, sin anuncios ni funciones de pago.</p>
-</div>
-<div style="padding: 24px 0; border-bottom: 1px solid #243554">
-<h3 style="margin: 0 0 8px; font-family: 'Space Grotesk', sans-serif; font-size: 20px">¿Necesito una cuenta de ScreenScraper?</h3>
-<p style="margin: 0; color: #c7d3e8">Sí. La cuenta es gratuita y se crea en <a href="https://www.screenscraper.fr">screenscraper.fr</a>. El programa respeta los límites de tu cuenta: hilos, peticiones por minuto y cuota diaria.</p>
-</div>
-<div style="padding: 24px 0; border-bottom: 1px solid #243554">
-<h3 style="margin: 0 0 8px; font-family: 'Space Grotesk', sans-serif; font-size: 20px">¿Puede estropear mi colección?</h3>
-<p style="margin: 0; color: #c7d3e8">No. Tu carpeta de ROMs nunca se modifica: el programa trabaja sobre una copia en la carpeta de salida, guarda las versiones anteriores de cada gamelist y no borra nada.</p>
-</div>
-<div style="padding: 24px 0; border-bottom: 1px solid #243554">
-<h3 style="margin: 0 0 8px; font-family: 'Space Grotesk', sans-serif; font-size: 20px">¿En qué idiomas está?</h3>
-<p style="margin: 0; color: #c7d3e8">Castellano, inglés, francés, alemán, portugués, ruso e italiano. La sinopsis de los juegos se descarga en el idioma que elijas.</p>
-</div>
-<div style="padding: 24px 0; border-bottom: 1px solid #243554">
-<h3 style="margin: 0 0 8px; font-family: 'Space Grotesk', sans-serif; font-size: 20px">¿Qué necesito para usarlo?</h3>
-<p style="margin: 0; color: #c7d3e8">Un ordenador con Windows o Linux y una pantalla de al menos 1280 × 720. Tu Batocera puede estar en la red: no hace falta sacar el disco.</p>
-</div>
+<section id="preguntas" class="wrap" style="max-width:920px;padding-top:112px;padding-bottom:104px">
+<p class="kicker" data-t="faq_kicker">Preguntas frecuentes</p>
+<h2 class="h2big" style="margin-bottom:40px" data-t="faq_title">Lo que suele preguntarse</h2>
+<div style="border-top:1px solid #243554" class="faq">
+<div style="padding:24px 0;border-bottom:1px solid #243554"><h3 style="margin:0 0 8px;font-family:'Space Grotesk',sans-serif;font-size:20px" data-t="q1"></h3><p style="margin:0;color:#c7d3e8" data-t="a1"></p></div>
+<div style="padding:24px 0;border-bottom:1px solid #243554"><h3 style="margin:0 0 8px;font-family:'Space Grotesk',sans-serif;font-size:20px" data-t="q2"></h3><p style="margin:0;color:#c7d3e8" data-h="a2"></p></div>
+<div style="padding:24px 0;border-bottom:1px solid #243554"><h3 style="margin:0 0 8px;font-family:'Space Grotesk',sans-serif;font-size:20px" data-t="q3"></h3><p style="margin:0;color:#c7d3e8" data-t="a3"></p></div>
+<div style="padding:24px 0;border-bottom:1px solid #243554"><h3 style="margin:0 0 8px;font-family:'Space Grotesk',sans-serif;font-size:20px" data-t="q4"></h3><p style="margin:0;color:#c7d3e8" data-t="a4"></p></div>
+<div style="padding:24px 0;border-bottom:1px solid #243554"><h3 style="margin:0 0 8px;font-family:'Space Grotesk',sans-serif;font-size:20px" data-t="q5"></h3><p style="margin:0;color:#c7d3e8" data-t="a5"></p></div>
 </div>
 </section>
 
 <!-- ============================ DESCARGAR ============================ -->
-<section id="descargar" style="max-width: 1200px; margin: 0 auto; padding: 0 24px 112px">
-<div style="border-radius: 24px; border: 1px solid rgba(242,169,59,0.45); background: linear-gradient(180deg, #172540 0%, #111c31 100%); padding: clamp(32px, 6vw, 72px); display: flex; flex-direction: column; align-items: center; text-align: center; gap: 18px">
-<h2 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: clamp(32px, 4vw, 52px); line-height: 1.1; letter-spacing: -0.02em">Descarga KukoScrapingFree</h2>
-<p style="margin: 0; color: #c7d3e8; max-width: 620px">Gratuito · Sin instalación · Para Windows y Linux</p>
-<div style="display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; margin-top: 10px">
-<a href="https://github.com/kukoxbmc/KukoScrapingFree-web/releases/latest" style="background: #f2a93b; color: #1a1206; font-weight: 600; font-size: 17px; padding: 14px 26px; border-radius: 12px; min-height: 52px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 10px">
-<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1a1206" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 10l5 5 5-5M4 21h16"></path></svg>
-Descargar para Windows</a>
-<a href="https://github.com/kukoxbmc/KukoScrapingFree-web/releases/latest" style="color: #f1f5fc; font-weight: 600; font-size: 17px; padding: 14px 26px; border-radius: 12px; border: 1px solid #344a74; min-height: 52px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 10px">
-<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#f1f5fc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 10l5 5 5-5M4 21h16"></path></svg>
-Descargar para Linux</a>
+<section id="descargar" class="wrap" style="padding-bottom:112px">
+<div style="border-radius:24px;border:1px solid rgba(242,169,59,.45);background:linear-gradient(180deg,#172540 0%,#111c31 100%);padding:clamp(32px,6vw,72px);display:flex;flex-direction:column;align-items:center;text-align:center;gap:18px">
+<h2 style="margin:0;font-family:'Space Grotesk',sans-serif;font-size:clamp(32px,4vw,52px);line-height:1.1;letter-spacing:-.02em" data-t="dl_title">Descarga KukoScrapingFree</h2>
+<p style="margin:0;color:#c7d3e8;max-width:620px" data-t="dl_sub">Gratuito · Sin instalación · Para Windows y Linux</p>
+<div style="display:flex;flex-wrap:wrap;gap:14px;justify-content:center;margin-top:10px">
+<a id="dl-win" href="https://github.com/kukoxbmc/KukoScrapingFree-web/releases/latest" class="btn btn-a"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1a1206" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 10l5 5 5-5M4 21h16"></path></svg><span data-t="dl_win">Descargar para Windows</span></a>
+<a id="dl-linux" href="https://github.com/kukoxbmc/KukoScrapingFree-web/releases/latest" class="btn btn-b"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#f1f5fc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 10l5 5 5-5M4 21h16"></path></svg><span data-t="dl_linux">Descargar para Linux</span></a>
 </div>
-<p style="margin: 6px 0 0; color: #a6b6d2; font-size: 15px">Las descargas están en la <a href="https://github.com/kukoxbmc/KukoScrapingFree-web/releases/latest">página de versiones de GitHub</a>. Descárgalo solo desde aquí.</p>
+<p style="margin:6px 0 0;color:#a6b6d2;font-size:15px" data-h="dl_note"></p>
 </div>
 </section>
 
 <!-- ============================ SCREENSCRAPER ============================ -->
-<section style="max-width: 1200px; margin: 0 auto; padding: 0 24px 104px">
-<div style="display: flex; flex-wrap: wrap; gap: 20px 32px; align-items: center; background: #152137; border: 1px solid #243554; border-radius: 16px; padding: 32px">
-<span style="flex: none; width: 52px; height: 52px; border-radius: 26px; background: rgba(147,164,255,0.16); display: flex; align-items: center; justify-content: center">
-<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#93a4ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7.5-4.6-9-9.3C2 7.4 4.3 4.5 7.4 4.5c2 0 3.6 1.2 4.6 2.8 1-1.6 2.6-2.8 4.6-2.8 3.1 0 5.4 2.9 4.4 6.2-1.5 4.7-9 9.3-9 9.3z"></path></svg>
-</span>
-<div style="flex: 1 1 420px; min-width: 0">
-<h2 style="margin: 0 0 6px; font-family: 'Space Grotesk', sans-serif; font-size: 22px">Gracias a ScreenScraper</h2>
-<p style="margin: 0; color: #c7d3e8">La información, las imágenes y los vídeos de los juegos proceden de <a href="https://www.screenscraper.fr">ScreenScraper.fr</a>, una gran base de datos creada y mantenida por su comunidad. Gracias por permitir usar su API para dar servicio a este programa. Los datos y las imágenes pertenecen a ScreenScraper y a sus autores.</p>
+<section class="wrap" style="padding-bottom:104px">
+<div style="display:flex;flex-wrap:wrap;gap:20px 32px;align-items:center;background:#152137;border:1px solid #243554;border-radius:16px;padding:32px">
+<span style="flex:none;width:52px;height:52px;border-radius:26px;background:rgba(147,164,255,.16);display:flex;align-items:center;justify-content:center"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#93a4ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7.5-4.6-9-9.3C2 7.4 4.3 4.5 7.4 4.5c2 0 3.6 1.2 4.6 2.8 1-1.6 2.6-2.8 4.6-2.8 3.1 0 5.4 2.9 4.4 6.2-1.5 4.7-9 9.3-9 9.3z"></path></svg></span>
+<div style="flex:1 1 420px;min-width:0">
+<h2 style="margin:0 0 6px;font-family:'Space Grotesk',sans-serif;font-size:22px" data-t="ss_title">Gracias a ScreenScraper</h2>
+<p style="margin:0;color:#c7d3e8" data-h="ss_text"></p>
 </div>
 </div>
 </section>
 
 <!-- ============================ PIE ============================ -->
-<footer style="border-top: 1px solid #1e2c47">
-<div style="max-width: 1200px; margin: 0 auto; padding: 32px 24px 40px; display: flex; flex-wrap: wrap; gap: 12px 32px; justify-content: space-between; align-items: center; font-size: 15px; color: #a6b6d2">
-<span>Creado por <b style="color: #f1f5fc">Kukoman</b> · © 2026 · Freeware · <a href="https://github.com/kukoxbmc/KukoScrapingFree-web">GitHub</a></span>
-<span>Proyecto independiente. Batocera y ScreenScraper pertenecen a sus respectivos autores.</span>
+<footer>
+<div class="wrap" style="padding-top:32px;padding-bottom:40px;display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-between;align-items:center;font-size:15px;color:#a6b6d2">
+<span data-h="foot_by"></span>
+<span data-t="foot_indep"></span>
 </div>
 </footer>
 
-</div>
+<script src="textos.js"></script>
+<script src="web.js"></script>
 </body>
 </html>
