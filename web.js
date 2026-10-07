@@ -76,6 +76,7 @@
       b.setAttribute("aria-checked", b.getAttribute("data-code") === code ? "true" : "false");
     });
     pintarDescargas();
+    if (typeof pintarVersion === "function") pintarVersion();
   }
 
   // ---------------- selector de idioma ----------------
@@ -151,10 +152,9 @@
     })
       .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
       .then(function (rels) {
-        var w = 0, l = 0, ultima = null;
+        var w = 0, l = 0;
         rels.forEach(function (rel) {
           if (rel.draft) return;
-          if (!ultima && !rel.prerelease) ultima = rel;
           (rel.assets || []).forEach(function (a) {
             var n = (a.name || "").toLowerCase();
             if (n.indexOf("-windows") >= 0) w += a.download_count || 0;
@@ -163,17 +163,33 @@
         });
         descargas.win = w; descargas.linux = l;
         pintarDescargas();
-        // los botones descargan directamente el zip de la última versión
-        if (ultima) (ultima.assets || []).forEach(function (a) {
-          var n = (a.name || "").toLowerCase();
-          if (/-windows\.zip$/.test(n)) document.getElementById("dl-win").href = a.browser_download_url;
-          if (/-linux\.zip$/.test(n)) document.getElementById("dl-linux").href = a.browser_download_url;
-        });
       })
       .catch(function () { pintarDescargas(); });
   }
 
+  // Enlaces directos a los zips de la última versión (version.json lo actualiza la compilación).
+  var version = null;
+  function pintarVersion() {
+    if (!version) return;
+    var tx = T[actual] || T.es;
+    document.getElementById("dl-ver").textContent = (tx.dl_version || "v{v}").replace("{v}", version);
+  }
+  function leerVersion() {
+    fetch("version.json", { cache: "no-store" })
+      .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+      .then(function (j) {
+        if (!j.version || !/^[0-9][0-9.]*$/.test(j.version)) return;
+        version = j.version;
+        var base = "https://github.com/kukoxbmc/KukoScrapingFree-web/releases/download/v" + version + "/KukoScrapingFree-" + version;
+        document.getElementById("dl-win").href = base + "-windows.zip";
+        document.getElementById("dl-linux").href = base + "-linux.zip";
+        pintarVersion();
+      })
+      .catch(function () {});
+  }
+
   aplicarIdioma(idiomaInicial());
+  leerVersion();
   pintarDigitos("cnt-visitas", null);
   contarVisita();
   contarDescargas();
