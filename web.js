@@ -155,6 +155,10 @@
         var w = 0, l = 0;
         rels.forEach(function (rel) {
           if (rel.draft) return;
+          // por si version.json no trae la fecha: la de publicación de esa versión en GitHub
+          if (!fecha && version && rel.tag_name === "v" + version && rel.published_at) {
+            fecha = new Date(rel.published_at); pintarVersion();
+          }
           (rel.assets || []).forEach(function (a) {
             var n = (a.name || "").toLowerCase();
             if (n.indexOf("-windows") >= 0) w += a.download_count || 0;
@@ -169,10 +173,19 @@
 
   // Enlaces directos a los zips de la última versión (version.json lo actualiza la compilación).
   var version = null;
+  var fecha = null;            // fecha de publicación de la versión (Date)
+  function dosCifras(n) { return (n < 10 ? "0" : "") + n; }
   function pintarVersion() {
     if (!version) return;
     var tx = T[actual] || T.es;
     document.getElementById("dl-ver").textContent = (tx.dl_version || "v{v}").replace("{v}", version);
+    if (fecha && !isNaN(fecha)) {
+      // formato europeo siempre: dd/mm/aaaa y 24 h, en la hora local de quien visita la web
+      var d = dosCifras(fecha.getDate()) + "/" + dosCifras(fecha.getMonth() + 1) + "/" + fecha.getFullYear();
+      var t = dosCifras(fecha.getHours()) + ":" + dosCifras(fecha.getMinutes());
+      document.getElementById("ver-text").textContent = tx.ver_line.replace("{v}", version).replace("{d}", d).replace("{t}", t);
+      document.getElementById("ver-line").hidden = false;
+    }
   }
   function leerVersion() {
     fetch("version.json", { cache: "no-store" })
@@ -180,6 +193,7 @@
       .then(function (j) {
         if (!j.version || !/^[0-9][0-9.]*$/.test(j.version)) return;
         version = j.version;
+        if (j.fecha) fecha = new Date(j.fecha);
         var base = "https://github.com/kukoxbmc/KukoScrapingFree-web/releases/download/v" + version + "/KukoScrapingFree-" + version;
         document.getElementById("dl-win").href = base + "-windows.zip";
         document.getElementById("dl-linux").href = base + "-linux.zip";
