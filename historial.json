@@ -1,0 +1,467 @@
+[
+ {
+  "version": "0.5.45",
+  "novedades": {
+   "es": [
+    "Historial de versiones: todas las mejoras y arreglos, versión a versión, en el LEEME.txt, en el README y en la web.",
+    "El aviso de actualización muestra las novedades de todas las versiones que te faltan, no solo de la última."
+   ],
+   "en": [
+    "Version history: every improvement and fix, version by version, in LEEME.txt, in the README and on the website.",
+    "The update notice shows what's new in every version you are missing, not just the latest one."
+   ],
+   "fr": [
+    "Historique des versions : toutes les améliorations et corrections, version par version, dans LEEME.txt, dans le README et sur le site.",
+    "L'avis de mise à jour montre les nouveautés de toutes les versions qui te manquent, pas seulement de la dernière."
+   ],
+   "de": [
+    "Versionsverlauf: alle Verbesserungen und Korrekturen, Version für Version, in LEEME.txt, im README und auf der Website.",
+    "Der Update-Hinweis zeigt die Neuerungen aller Versionen, die dir fehlen, nicht nur die der neuesten."
+   ],
+   "pt": [
+    "Histórico de versões: todas as melhorias e correções, versão a versão, no LEEME.txt, no README e no site.",
+    "O aviso de atualização mostra as novidades de todas as versões que te faltam, não só da última."
+   ],
+   "ru": [
+    "История версий: все улучшения и исправления, версия за версией, в LEEME.txt, в README и на сайте.",
+    "Уведомление об обновлении показывает новое во всех пропущенных версиях, а не только в последней."
+   ],
+   "it": [
+    "Cronologia delle versioni: tutti i miglioramenti e le correzioni, versione per versione, in LEEME.txt, nel README e sul sito.",
+    "L'avviso di aggiornamento mostra le novità di tutte le versioni che ti mancano, non solo dell'ultima."
+   ]
+  }
+ },
+ {
+  "version": "0.5.44",
+  "novedades": {
+   "es": [
+    "MAME: las imágenes de disco .chd ya no aparecen como juegos (son parte del juego, igual que en Batocera)."
+   ],
+   "en": [
+    "MAME: .chd disk images no longer appear as games (they are part of the game, as in Batocera)."
+   ],
+   "fr": [
+    "MAME : les images disque .chd n'apparaissent plus comme des jeux (elles font partie du jeu, comme dans Batocera)."
+   ],
+   "de": [
+    "MAME: .chd-Abbilder erscheinen nicht mehr als Spiele (sie gehören zum Spiel, wie in Batocera)."
+   ],
+   "pt": [
+    "MAME: as imagens de disco .chd já não aparecem como jogos (fazem parte do jogo, tal como no Batocera)."
+   ],
+   "ru": [
+    "MAME: образы дисков .chd больше не показываются как игры (это часть игры, как и в Batocera)."
+   ],
+   "it": [
+    "MAME: le immagini disco .chd non compaiono più come giochi (fanno parte del gioco, come in Batocera)."
+   ]
+  }
+ },
+ {
+  "version": "0.5.43",
+  "novedades": {
+   "es": [
+    "Linux: ya no aparece el aviso «Failed to register with host portal» al abrir el programa desde un terminal."
+   ],
+   "en": [
+    "Linux: the “Failed to register with host portal” warning no longer appears when starting the program from a terminal."
+   ],
+   "fr": [
+    "Linux : l'avertissement « Failed to register with host portal » n'apparaît plus au démarrage depuis un terminal."
+   ],
+   "de": [
+    "Linux: Die Warnung „Failed to register with host portal“ erscheint beim Start aus einem Terminal nicht mehr."
+   ],
+   "pt": [
+    "Linux: o aviso «Failed to register with host portal» já não aparece ao abrir o programa a partir de um terminal."
+   ],
+   "ru": [
+    "Linux: при запуске из терминала больше не появляется предупреждение «Failed to register with host portal»."
+   ],
+   "it": [
+    "Linux: l'avviso «Failed to register with host portal» non compare più avviando il programma da un terminale."
+   ]
+  }
+ },
+ {
+  "version": "0.5.42",
+  "novedades": {
+   "es": [
+    "Antes de actualizar se comprueba que haya espacio libre suficiente en el disco.",
+    "Volver a la versión anterior muestra una barra de progreso y la ventana no se bloquea.",
+    "Al actualizar, el programa se cierra de forma ordenada, esperando a las tareas en segundo plano.",
+    "El último mensaje de la barra de estado usa todo el ancho libre y, si no cabe, se acorta con «…»."
+   ],
+   "en": [
+    "Before updating, the program checks that there is enough free disk space.",
+    "Going back to the previous version shows a progress bar and the window no longer freezes.",
+    "When updating, the program closes in an orderly way, waiting for background tasks.",
+    "The last message in the status bar uses all the free width and, if it does not fit, is shortened with “…”."
+   ],
+   "fr": [
+    "Avant la mise à jour, le programme vérifie qu'il y a assez d'espace libre sur le disque.",
+    "Revenir à la version précédente affiche une barre de progression et la fenêtre ne se bloque plus.",
+    "Lors de la mise à jour, le programme se ferme proprement en attendant les tâches en arrière-plan.",
+    "Le dernier message de la barre d'état utilise toute la largeur libre et, s'il ne tient pas, il est raccourci avec « … »."
+   ],
+   "de": [
+    "Vor dem Update wird geprüft, ob genug freier Speicherplatz vorhanden ist.",
+    "Die Rückkehr zur vorherigen Version zeigt einen Fortschrittsbalken, und das Fenster friert nicht mehr ein.",
+    "Beim Update schließt sich das Programm geordnet und wartet auf Hintergrundaufgaben.",
+    "Die letzte Meldung in der Statusleiste nutzt die ganze freie Breite und wird, wenn sie nicht passt, mit „…“ gekürzt."
+   ],
+   "pt": [
+    "Antes de atualizar verifica-se se há espaço livre suficiente no disco.",
+    "Voltar à versão anterior mostra uma barra de progresso e a janela já não bloqueia.",
+    "Ao atualizar, o programa fecha-se de forma ordenada, à espera das tarefas em segundo plano.",
+    "A última mensagem da barra de estado usa toda a largura livre e, se não couber, é encurtada com «…»."
+   ],
+   "ru": [
+    "Перед обновлением проверяется, достаточно ли свободного места на диске.",
+    "При возврате к предыдущей версии показывается индикатор прогресса, и окно больше не зависает.",
+    "При обновлении программа закрывается корректно, дожидаясь фоновых задач.",
+    "Последнее сообщение в строке состояния занимает всю свободную ширину, а если не помещается — сокращается с «…»."
+   ],
+   "it": [
+    "Prima di aggiornare si controlla che ci sia abbastanza spazio libero sul disco.",
+    "Tornare alla versione precedente mostra una barra di avanzamento e la finestra non si blocca più.",
+    "Durante l'aggiornamento il programma si chiude in modo ordinato, aspettando le attività in background.",
+    "L'ultimo messaggio della barra di stato usa tutta la larghezza libera e, se non ci sta, viene accorciato con «…»."
+   ]
+  }
+ },
+ {
+  "version": "0.5.41",
+  "novedades": {
+   "es": [
+    "El programa se actualiza solo: al abrirse comprueba si hay una versión nueva y la instala con un clic, sin tocar tus datos ni tu carpeta de salida.",
+    "Se guarda la versión anterior: si algo no va bien, puedes volver a ella desde Ayuda › Acerca de.",
+    "Nueva opción en Ajustes para no buscar actualizaciones al abrir el programa."
+   ],
+   "en": [
+    "The program updates itself: when it starts it checks for a new version and installs it with one click, without touching your data or your output folder.",
+    "The previous version is kept: if something is wrong, you can go back to it from Help › About.",
+    "New option in Settings to stop checking for updates when the program starts."
+   ],
+   "fr": [
+    "Le programme se met à jour tout seul : au démarrage, il vérifie s'il existe une nouvelle version et l'installe en un clic, sans toucher à tes données ni à ton dossier de sortie.",
+    "La version précédente est conservée : si quelque chose ne va pas, tu peux y revenir depuis Aide › À propos.",
+    "Nouvelle option dans les Paramètres pour ne pas rechercher de mises à jour au démarrage."
+   ],
+   "de": [
+    "Das Programm aktualisiert sich selbst: Beim Start prüft es, ob es eine neue Version gibt, und installiert sie mit einem Klick, ohne deine Daten oder deinen Ausgabeordner anzutasten.",
+    "Die vorherige Version wird aufbewahrt: Falls etwas nicht stimmt, kannst du über Hilfe › Über zu ihr zurückkehren.",
+    "Neue Option in den Einstellungen, um beim Start nicht nach Updates zu suchen."
+   ],
+   "pt": [
+    "O programa atualiza-se sozinho: ao abrir, verifica se há uma versão nova e instala-a com um clique, sem mexer nos teus dados nem na tua pasta de saída.",
+    "A versão anterior fica guardada: se algo correr mal, podes voltar a ela em Ajuda › Acerca de.",
+    "Nova opção nas Definições para não procurar atualizações ao abrir o programa."
+   ],
+   "ru": [
+    "Программа обновляется сама: при запуске проверяет, вышла ли новая версия, и устанавливает её в один клик, не трогая ваши данные и папку вывода.",
+    "Предыдущая версия сохраняется: если что-то не так, к ней можно вернуться через Справка › О программе.",
+    "Новый параметр в настройках, чтобы не проверять обновления при запуске."
+   ],
+   "it": [
+    "Il programma si aggiorna da solo: all'avvio controlla se c'è una nuova versione e la installa con un clic, senza toccare i tuoi dati né la cartella di uscita.",
+    "La versione precedente viene conservata: se qualcosa non va, puoi tornarci da Aiuto › Informazioni.",
+    "Nuova opzione nelle Impostazioni per non cercare aggiornamenti all'avvio."
+   ]
+  }
+ },
+ {
+  "version": "0.5.40",
+  "novedades": {
+   "es": [
+    "Descargo de responsabilidad en «Acerca de» y en la licencia."
+   ],
+   "en": [
+    "Disclaimer in “About” and in the licence."
+   ],
+   "fr": [
+    "Avertissement dans « À propos » et dans la licence."
+   ],
+   "de": [
+    "Haftungsausschluss in „Über“ und in der Lizenz."
+   ],
+   "pt": [
+    "Exclusão de responsabilidade em «Acerca de» e na licença."
+   ],
+   "ru": [
+    "Отказ от ответственности в окне «О программе» и в лицензии."
+   ],
+   "it": [
+    "Esclusione di responsabilità in «Informazioni» e nella licenza."
+   ]
+  }
+ },
+ {
+  "version": "0.5.39",
+  "novedades": {
+   "es": [
+    "Nuevo logo del programa: en las ventanas, en la barra de tareas y en el ejecutable de Windows."
+   ],
+   "en": [
+    "New program logo: in the windows, in the taskbar and in the Windows executable."
+   ],
+   "fr": [
+    "Nouveau logo du programme : dans les fenêtres, dans la barre des tâches et dans l'exécutable Windows."
+   ],
+   "de": [
+    "Neues Programmlogo: in den Fenstern, in der Taskleiste und in der Windows-Programmdatei."
+   ],
+   "pt": [
+    "Novo logótipo do programa: nas janelas, na barra de tarefas e no executável do Windows."
+   ],
+   "ru": [
+    "Новый логотип программы: в окнах, на панели задач и в исполняемом файле Windows."
+   ],
+   "it": [
+    "Nuovo logo del programma: nelle finestre, nella barra delle applicazioni e nell'eseguibile di Windows."
+   ]
+  }
+ },
+ {
+  "version": "0.5.38",
+  "novedades": {
+   "es": [
+    "La carpeta de salida empieza vacía y hay que elegirla, tanto en el asistente como en Ajustes."
+   ],
+   "en": [
+    "The output folder starts empty and has to be chosen, both in the wizard and in Settings."
+   ],
+   "fr": [
+    "Le dossier de sortie est vide au départ et doit être choisi, dans l'assistant comme dans les Paramètres."
+   ],
+   "de": [
+    "Der Ausgabeordner ist anfangs leer und muss gewählt werden, im Assistenten wie in den Einstellungen."
+   ],
+   "pt": [
+    "A pasta de saída começa vazia e tem de ser escolhida, tanto no assistente como nas Definições."
+   ],
+   "ru": [
+    "Папка вывода изначально пуста, и её нужно выбрать — и в мастере, и в настройках."
+   ],
+   "it": [
+    "La cartella di uscita all'inizio è vuota e va scelta, sia nella procedura guidata sia nelle Impostazioni."
+   ]
+  }
+ },
+ {
+  "version": "0.5.37",
+  "novedades": {
+   "es": [
+    "Linux: el programa lleva dentro las bibliotecas que le hacen falta para arrancar en sistemas que no las tienen instaladas."
+   ],
+   "en": [
+    "Linux: the program bundles the libraries it needs to start on systems that do not have them installed."
+   ],
+   "fr": [
+    "Linux : le programme embarque les bibliothèques nécessaires pour démarrer sur les systèmes qui ne les ont pas."
+   ],
+   "de": [
+    "Linux: Das Programm bringt die Bibliotheken mit, die es zum Starten auf Systemen ohne diese braucht."
+   ],
+   "pt": [
+    "Linux: o programa inclui as bibliotecas de que precisa para arrancar em sistemas que não as têm instaladas."
+   ],
+   "ru": [
+    "Linux: программа содержит библиотеки, необходимые для запуска в системах, где их нет."
+   ],
+   "it": [
+    "Linux: il programma include le librerie necessarie per avviarsi sui sistemi che non le hanno installate."
+   ]
+  }
+ },
+ {
+  "version": "0.5.36",
+  "novedades": {
+   "es": [
+    "El asistente del primer arranque es obligatorio: si se cierra sin terminar, el programa no se abre y el asistente vuelve a salir la próxima vez."
+   ],
+   "en": [
+    "The first-run wizard is required: if it is closed before finishing, the program does not open and the wizard appears again next time."
+   ],
+   "fr": [
+    "L'assistant du premier démarrage est obligatoire : s'il est fermé avant la fin, le programme ne s'ouvre pas et l'assistant réapparaît la fois suivante."
+   ],
+   "de": [
+    "Der Assistent beim ersten Start ist Pflicht: Wird er vorzeitig geschlossen, öffnet sich das Programm nicht und der Assistent erscheint beim nächsten Mal wieder."
+   ],
+   "pt": [
+    "O assistente do primeiro arranque é obrigatório: se for fechado antes de terminar, o programa não abre e o assistente volta a aparecer da próxima vez."
+   ],
+   "ru": [
+    "Мастер первого запуска обязателен: если закрыть его, не завершив, программа не откроется, а мастер появится снова в следующий раз."
+   ],
+   "it": [
+    "La procedura guidata del primo avvio è obbligatoria: se viene chiusa prima della fine, il programma non si apre e la procedura ricompare la volta successiva."
+   ]
+  }
+ },
+ {
+  "version": "0.5.35",
+  "novedades": {
+   "es": [
+    "Editor de composiciones: deshacer y rehacer, atajos de teclado, botones para alinear y guías magnéticas.",
+    "Textos de las composiciones: alineación, contorno y sombra, y nuevos campos {rating}, {system} y {region}."
+   ],
+   "en": [
+    "Composition editor: undo and redo, keyboard shortcuts, align buttons and snapping guides.",
+    "Composition texts: alignment, outline and shadow, and new {rating}, {system} and {region} fields."
+   ],
+   "fr": [
+    "Éditeur de compositions : annuler et rétablir, raccourcis clavier, boutons d'alignement et repères magnétiques.",
+    "Textes des compositions : alignement, contour et ombre, et nouveaux champs {rating}, {system} et {region}."
+   ],
+   "de": [
+    "Kompositionseditor: Rückgängig und Wiederholen, Tastenkürzel, Ausrichtungsknöpfe und magnetische Hilfslinien.",
+    "Texte der Kompositionen: Ausrichtung, Kontur und Schatten sowie neue Felder {rating}, {system} und {region}."
+   ],
+   "pt": [
+    "Editor de composições: anular e refazer, atalhos de teclado, botões para alinhar e guias magnéticas.",
+    "Textos das composições: alinhamento, contorno e sombra, e novos campos {rating}, {system} e {region}."
+   ],
+   "ru": [
+    "Редактор композиций: отмена и повтор, сочетания клавиш, кнопки выравнивания и магнитные направляющие.",
+    "Тексты композиций: выравнивание, контур и тень, новые поля {rating}, {system} и {region}."
+   ],
+   "it": [
+    "Editor delle composizioni: annulla e ripeti, scorciatoie da tastiera, pulsanti di allineamento e guide magnetiche.",
+    "Testi delle composizioni: allineamento, contorno e ombra, e nuovi campi {rating}, {system} e {region}."
+   ]
+  }
+ },
+ {
+  "version": "0.5.34",
+  "novedades": {
+   "es": [
+    "Editor de composiciones: arreglados el movimiento con las flechas del teclado y los pasos de deshacer."
+   ],
+   "en": [
+    "Composition editor: fixed moving with the arrow keys and the undo steps."
+   ],
+   "fr": [
+    "Éditeur de compositions : corrigés le déplacement avec les flèches du clavier et les étapes d'annulation."
+   ],
+   "de": [
+    "Kompositionseditor: Verschieben mit den Pfeiltasten und die Rückgängig-Schritte korrigiert."
+   ],
+   "pt": [
+    "Editor de composições: corrigidos o movimento com as setas do teclado e os passos de anular."
+   ],
+   "ru": [
+    "Редактор композиций: исправлено перемещение стрелками и шаги отмены."
+   ],
+   "it": [
+    "Editor delle composizioni: corretti lo spostamento con le frecce della tastiera e i passi di annullamento."
+   ]
+  }
+ },
+ {
+  "version": "0.5.33",
+  "novedades": {
+   "es": [
+    "Nueva ventana «Acerca de»: licencia freeware, aviso de estafa y agradecimiento a ScreenScraper. El programa incluye LICENCIA.txt."
+   ],
+   "en": [
+    "New “About” window: freeware licence, scam warning and thanks to ScreenScraper. The program includes LICENCIA.txt."
+   ],
+   "fr": [
+    "Nouvelle fenêtre « À propos » : licence freeware, avertissement contre les arnaques et remerciements à ScreenScraper. Le programme inclut LICENCIA.txt."
+   ],
+   "de": [
+    "Neues Fenster „Über“: Freeware-Lizenz, Betrugswarnung und Dank an ScreenScraper. Das Programm enthält LICENCIA.txt."
+   ],
+   "pt": [
+    "Nova janela «Acerca de»: licença freeware, aviso de burla e agradecimento ao ScreenScraper. O programa inclui LICENCIA.txt."
+   ],
+   "ru": [
+    "Новое окно «О программе»: лицензия freeware, предупреждение о мошенничестве и благодарность ScreenScraper. Программа включает LICENCIA.txt."
+   ],
+   "it": [
+    "Nuova finestra «Informazioni»: licenza freeware, avviso contro le truffe e ringraziamento a ScreenScraper. Il programma include LICENCIA.txt."
+   ]
+  }
+ },
+ {
+  "version": "0.5.32",
+  "novedades": {
+   "es": [
+    "Restaurar y deshacer: vuelve a cualquier versión anterior del gamelist o recupera los ficheros que se apartaron al limpiar."
+   ],
+   "en": [
+    "Restore and undo: go back to any previous version of the gamelist or recover the files set aside when cleaning."
+   ],
+   "fr": [
+    "Restaurer et annuler : reviens à n'importe quelle version précédente du gamelist ou récupère les fichiers mis de côté lors du nettoyage."
+   ],
+   "de": [
+    "Wiederherstellen und Rückgängig: zu jeder früheren Version der Gamelist zurückkehren oder beim Aufräumen beiseitegelegte Dateien zurückholen."
+   ],
+   "pt": [
+    "Restaurar e anular: volta a qualquer versão anterior do gamelist ou recupera os ficheiros que foram postos de parte ao limpar."
+   ],
+   "ru": [
+    "Восстановление и отмена: возврат к любой прежней версии gamelist или восстановление файлов, отложенных при очистке."
+   ],
+   "it": [
+    "Ripristina e annulla: torna a qualsiasi versione precedente del gamelist o recupera i file messi da parte durante la pulizia."
+   ]
+  }
+ },
+ {
+  "version": "0.5.31",
+  "novedades": {
+   "es": [
+    "El registro se guarda en disco (datos/registro) y hay una opción para crear un informe para soporte, sin contraseñas."
+   ],
+   "en": [
+    "The log is saved to disk (datos/registro) and there is an option to create a support report, without passwords."
+   ],
+   "fr": [
+    "Le journal est enregistré sur le disque (datos/registro) et une option permet de créer un rapport pour l'assistance, sans mots de passe."
+   ],
+   "de": [
+    "Das Protokoll wird auf der Festplatte gespeichert (datos/registro), und ein Support-Bericht ohne Passwörter lässt sich erstellen."
+   ],
+   "pt": [
+    "O registo é guardado no disco (datos/registro) e há uma opção para criar um relatório para suporte, sem palavras-passe."
+   ],
+   "ru": [
+    "Журнал сохраняется на диск (datos/registro), и можно создать отчёт для поддержки без паролей."
+   ],
+   "it": [
+    "Il registro viene salvato su disco (datos/registro) e c'è un'opzione per creare un rapporto per l'assistenza, senza password."
+   ]
+  }
+ },
+ {
+  "version": "0.5.30",
+  "novedades": {
+   "es": [
+    "Aviso antes de un scrapeo grande si la cuota diaria de tu cuenta de ScreenScraper no va a llegar."
+   ],
+   "en": [
+    "Warning before a large scrape if your ScreenScraper account's daily quota will not be enough."
+   ],
+   "fr": [
+    "Avertissement avant un gros scraping si le quota quotidien de ton compte ScreenScraper ne suffira pas."
+   ],
+   "de": [
+    "Warnung vor einem großen Scrape, wenn das Tageskontingent deines ScreenScraper-Kontos nicht reicht."
+   ],
+   "pt": [
+    "Aviso antes de um scraping grande se a quota diária da tua conta do ScreenScraper não for suficiente."
+   ],
+   "ru": [
+    "Предупреждение перед большой обработкой, если дневной квоты вашей учётной записи ScreenScraper не хватит."
+   ],
+   "it": [
+    "Avviso prima di uno scraping grande se la quota giornaliera del tuo account ScreenScraper non basterà."
+   ]
+  }
+ }
+]
