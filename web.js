@@ -214,6 +214,7 @@
         var w = 0, l = 0;
         rels.forEach(function (rel) {
           if (rel.draft) return;
+          if (rel.tag_name && rel.published_at) fechasVersion[String(rel.tag_name).replace(/^v/, "")] = rel.published_at;
           if (!fecha && version && rel.tag_name === "v" + version && rel.published_at) {
             fecha = new Date(rel.published_at); pintarVersion();
           }
@@ -225,6 +226,7 @@
         });
         descargas.win = w; descargas.linux = l;
         pintarDescargas(true);
+        pintarHistorial();
       })
       .catch(function () {});
   }
@@ -251,14 +253,53 @@
       if (info.tamano.windows) $("size-win").textContent = t.dl_size.replace("{size}", mb(info.tamano.windows)) + " · v" + version;
       if (info.tamano.linux) $("size-linux").textContent = t.dl_size.replace("{size}", mb(info.tamano.linux)) + " · v" + version;
     }
-    var notas = info && info.novedades ? (info.novedades[actual] || info.novedades.es) : null;
-    if (notas && notas.length) {
-      $("news-title").textContent = t.news_title.replace("{v}", version);
-      var ul = $("news-list");
-      ul.textContent = "";
+    pintarHistorial();
+  }
+
+  // ================================================================ historial de versiones
+  // historial.json lo publica la compilación con cada versión; las fechas salen de GitHub
+  var historial = null, fechasVersion = {};
+  function fechaCorta(iso) {
+    var f = new Date(iso);
+    if (isNaN(f)) return "";
+    return dos(f.getDate()) + "/" + dos(f.getMonth() + 1) + "/" + f.getFullYear();   // siempre europeo
+  }
+  function pintarHistorial() {
+    if (!historial || !historial.length) return;
+    var t = tx(), box = $("hist-list");
+    var abiertas = {};
+    box.querySelectorAll("details[open]").forEach(function (d) { abiertas[d.getAttribute("data-v")] = true; });
+    box.textContent = "";
+    historial.forEach(function (h, i) {
+      var notas = (h.novedades && (h.novedades[actual] || h.novedades.es)) || [];
+      if (!notas.length) return;
+      var d = document.createElement("details");
+      d.className = "ver" + (i === 0 ? " latest" : "");
+      d.setAttribute("data-v", h.version);
+      if (i < 2 || abiertas[h.version]) d.open = true;      // las dos más recientes, desplegadas
+      var sm = document.createElement("summary");
+      var num = document.createElement("span"); num.className = "ver-num"; num.textContent = "v" + h.version;
+      sm.appendChild(num);
+      if (i === 0) { var tg = document.createElement("span"); tg.className = "ver-tag"; tg.textContent = t.hist_latest; sm.appendChild(tg); }
+      var iso = fechasVersion[h.version];
+      if (iso) { var fe = document.createElement("span"); fe.className = "ver-date"; fe.textContent = t.hist_published.replace("{d}", fechaCorta(iso)); sm.appendChild(fe); }
+      d.appendChild(sm);
+      var ul = document.createElement("ul");
       notas.forEach(function (n) { var li = document.createElement("li"); li.textContent = n; ul.appendChild(li); });
-      $("novedades").hidden = false;
-    }
+      d.appendChild(ul);
+      box.appendChild(d);
+    });
+    var dev = document.createElement("p"); dev.className = "hist-dev"; dev.textContent = t.hist_dev; box.appendChild(dev);
+    $("historial").hidden = false;
+  }
+  function leerHistorial() {
+    fetch("historial.json", { cache: "no-store" })
+      .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+      .then(function (j) { if (Array.isArray(j)) { historial = j; pintarHistorial(); } })
+      .catch(function () {
+        // sin historial.json todavía: al menos el de version.json (últimas versiones)
+        if (info && Array.isArray(info.historial)) { historial = info.historial; pintarHistorial(); }
+      });
   }
   function leerVersion() {
     fetch("version.json", { cache: "no-store" })
@@ -343,6 +384,7 @@
   aplicarIdioma(idiomaInicial());
   digitos("cnt-visitas", null); digitos("cnt-windows", null); digitos("cnt-linux", null);
   leerVersion();
+  leerHistorial();
   contarVisita();
   contarDescargas();
 })();
