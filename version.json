@@ -1,1 +1,67 @@
-{"version": "0.5.40", "fecha": "2026-10-07T18:02:09Z"}
+{
+ "version": "0.5.43",
+ "fecha": "2026-10-08T06:37:53Z",
+ "sha256": {
+  "windows": "3e2ca1c7068a3563aa16af93f61266be3f99a59e7de6fc1fd700e5f863cdeb57",
+  "linux": "045efe46e79d03111b50b20a86e3f3f61d32b6a46a6cbf29eebf6222cef7dc0e"
+ },
+ "tamano": {
+  "windows": 47655438,
+  "linux": 86821162
+ },
+ "descomprimido": {
+  "windows": 118269982,
+  "linux": 227767654
+ },
+ "novedades": {
+  "es": [
+   "El programa se actualiza solo: al abrirse comprueba si hay una versión nueva y la instala con un clic, sin tocar tus datos ni tu carpeta de salida.",
+   "Se guarda la versión anterior: si algo no va bien, puedes volver a ella desde Ayuda › Acerca de.",
+   "Nueva opción en Ajustes para no buscar actualizaciones al abrir el programa.",
+   "El último mensaje de la barra de estado usa todo el ancho libre y, si no cabe, se acorta con «…».",
+   "Linux: ya no aparece el aviso «Failed to register with host portal» al abrir el programa desde un terminal."
+  ],
+  "en": [
+   "The program updates itself: when it starts it checks for a new version and installs it with one click, without touching your data or your output folder.",
+   "The previous version is kept: if something is wrong, you can go back to it from Help › About.",
+   "New option in Settings to stop checking for updates when the program starts.",
+   "The last message in the status bar uses all the free width and, if it does not fit, is shortened with “…”.",
+   "Linux: the “Failed to register with host portal” warning no longer appears when starting the program from a terminal."
+  ],
+  "fr": [
+   "Le programme se met à jour tout seul : au démarrage, il vérifie s'il existe une nouvelle version et l'installe en un clic, sans toucher à tes données ni à ton dossier de sortie.",
+   "La version précédente est conservée : si quelque chose ne va pas, tu peux y revenir depuis Aide › À propos.",
+   "Nouvelle option dans les Paramètres pour ne pas rechercher de mises à jour au démarrage.",
+   "Le dernier message de la barre d'état utilise toute la largeur libre et, s'il ne tient pas, il est raccourci avec « … ».",
+   "Linux : l'avertissement « Failed to register with host portal » n'apparaît plus au démarrage depuis un terminal."
+  ],
+  "de": [
+   "Das Programm aktualisiert sich selbst: Beim Start prüft es, ob es eine neue Version gibt, und installiert sie mit einem Klick, ohne deine Daten oder deinen Ausgabeordner anzutasten.",
+   "Die vorherige Version wird aufbewahrt: Falls etwas nicht stimmt, kannst du über Hilfe › Über zu ihr zurückkehren.",
+   "Neue Option in den Einstellungen, um beim Start nicht nach Updates zu suchen.",
+   "Die letzte Meldung in der Statusleiste nutzt die ganze freie Breite und wird, wenn sie nicht passt, mit „…“ gekürzt.",
+   "Linux: Die Warnung „Failed to register with host portal“ erscheint beim Start aus einem Terminal nicht mehr."
+  ],
+  "pt": [
+   "O programa atualiza-se sozinho: ao abrir, verifica se há uma versão nova e instala-a com um clique, sem mexer nos teus dados nem na tua pasta de saída.",
+   "A versão anterior fica guardada: se algo correr mal, podes voltar a ela em Ajuda › Acerca de.",
+   "Nova opção nas Definições para não procurar atualizações ao abrir o programa.",
+   "A última mensagem da barra de estado usa toda a largura livre e, se não couber, é encurtada com «…».",
+   "Linux: o aviso «Failed to register with host portal» já não aparece ao abrir o programa a partir de um terminal."
+  ],
+  "ru": [
+   "Программа обновляется сама: при запуске проверяет, вышла ли новая версия, и устанавливает её в один клик, не трогая ваши данные и папку вывода.",
+   "Предыдущая версия сохраняется: если что-то не так, к ней можно вернуться через Справка › О программе.",
+   "Новый параметр в настройках, чтобы не проверять обновления при запуске.",
+   "Последнее сообщение в строке состояния занимает всю свободную ширину, а если не помещается — сокращается с «…».",
+   "Linux: при запуске из терминала больше не появляется предупреждение «Failed to register with host portal»."
+  ],
+  "it": [
+   "Il programma si aggiorna da solo: all'avvio controlla se c'è una nuova versione e la installa con un clic, senza toccare i tuoi dati né la cartella di uscita.",
+   "La versione precedente viene conservata: se qualcosa non va, puoi tornarci da Aiuto › Informazioni.",
+   "Nuova opzione nelle Impostazioni per non cercare aggiornamenti all'avvio.",
+   "L'ultimo messaggio della barra di stato usa tutta la larghezza libera e, se non ci sta, viene accorciato con «…».",
+   "Linux: l'avviso «Failed to register with host portal» non compare più avviando il programma da un terminale."
+  ]
+ }
+}
