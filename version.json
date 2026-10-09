@@ -1,56 +1,82 @@
 {
- "version": "0.5.45",
- "fecha": "2026-10-08T19:36:55Z",
+ "version": "0.5.46",
+ "fecha": "2026-10-09T12:34:48Z",
  "sha256": {
-  "windows": "276dd3022acff3cbb9a41d9d7fa0076ade06c3da53028cac78c9f1c2ce29c633",
-  "linux": "c5f1dbc5a5db70b0b00d125e85c90a83f58185374d4a4827fc19919dd0f33e0b"
+  "windows": "ae000370e5aa3cc85edc0c51bda7e126cd6f4c362ed67097e44bdad73720979a",
+  "linux": "02673f338e9672efe0726767e36e3ebe19e37aeab3f1d0de2ec0beefbb8917e0"
  },
  "tamano": {
-  "windows": 48529645,
-  "linux": 87952791
+  "windows": 48626473,
+  "linux": 87967159
  },
  "descomprimido": {
-  "windows": 120425156,
-  "linux": 230237156
+  "windows": 120594914,
+  "linux": 230282273
  },
  "novedades": {
   "es": [
-   "Historial de versiones: todas las mejoras y arreglos, versión a versión, en el LEEME.txt, en el README y en la web.",
-   "El aviso de actualización muestra las novedades de todas las versiones que te faltan, no solo de la última.",
-   "MAME: las imágenes de disco .chd ya no aparecen como juegos (son parte del juego, igual que en Batocera)."
+   "Carpeta del programa mucho más limpia: arriba solo quedan KukoScrapingFree, LEEME, LICENCIA, «datos» y «salida». Las librerías técnicas van dentro de la subcarpeta «programa». Al actualizar se ordena sola.",
+   "El aviso de versión nueva al abrir el programa ya no se pierde mientras se escanean las ROM: aparece en cuanto el programa está listo para usarse."
   ],
   "en": [
-   "Version history: every improvement and fix, version by version, in LEEME.txt, in the README and on the website.",
-   "The update notice shows what's new in every version you are missing, not just the latest one.",
-   "MAME: .chd disk images no longer appear as games (they are part of the game, as in Batocera)."
+   "Much tidier program folder: only KukoScrapingFree, LEEME, LICENCIA, «datos» and «salida» remain at the top. The technical libraries live inside the «programa» subfolder. Updating tidies it up automatically.",
+   "The new-version notice at startup is no longer lost while the ROMs are being scanned: it appears as soon as the program is ready to use."
   ],
   "fr": [
-   "Historique des versions : toutes les améliorations et corrections, version par version, dans LEEME.txt, dans le README et sur le site.",
-   "L'avis de mise à jour montre les nouveautés de toutes les versions qui te manquent, pas seulement de la dernière.",
-   "MAME : les images disque .chd n'apparaissent plus comme des jeux (elles font partie du jeu, comme dans Batocera)."
+   "Dossier du programme bien plus propre : en haut il ne reste que KukoScrapingFree, LEEME, LICENCIA, «datos» et «salida». Les bibliothèques techniques sont dans le sous-dossier «programa». La mise à jour fait le rangement toute seule.",
+   "L'avis de nouvelle version à l'ouverture ne se perd plus pendant l'analyse des ROM : il apparaît dès que le programme est prêt à être utilisé."
   ],
   "de": [
-   "Versionsverlauf: alle Verbesserungen und Korrekturen, Version für Version, in LEEME.txt, im README und auf der Website.",
-   "Der Update-Hinweis zeigt die Neuerungen aller Versionen, die dir fehlen, nicht nur die der neuesten.",
-   "MAME: .chd-Abbilder erscheinen nicht mehr als Spiele (sie gehören zum Spiel, wie in Batocera)."
+   "Viel aufgeräumterer Programmordner: oben bleiben nur KukoScrapingFree, LEEME, LICENCIA, «datos» und «salida». Die technischen Bibliotheken liegen im Unterordner «programa». Beim Aktualisieren wird automatisch aufgeräumt.",
+   "Der Hinweis auf eine neue Version beim Start geht beim Scannen der ROMs nicht mehr verloren: Er erscheint, sobald das Programm einsatzbereit ist."
   ],
   "pt": [
-   "Histórico de versões: todas as melhorias e correções, versão a versão, no LEEME.txt, no README e no site.",
-   "O aviso de atualização mostra as novidades de todas as versões que te faltam, não só da última.",
-   "MAME: as imagens de disco .chd já não aparecem como jogos (fazem parte do jogo, tal como no Batocera)."
+   "Pasta do programa muito mais limpa: em cima ficam só KukoScrapingFree, LEEME, LICENCIA, «datos» e «salida». As bibliotecas técnicas ficam dentro da subpasta «programa». Ao atualizar arruma-se sozinha.",
+   "O aviso de nova versão ao abrir o programa já não se perde enquanto as ROMs são analisadas: aparece assim que o programa está pronto a usar."
   ],
   "ru": [
-   "История версий: все улучшения и исправления, версия за версией, в LEEME.txt, в README и на сайте.",
-   "Уведомление об обновлении показывает новое во всех пропущенных версиях, а не только в последней.",
-   "MAME: образы дисков .chd больше не показываются как игры (это часть игры, как и в Batocera)."
+   "Папка программы стала намного чище: сверху остаются только KukoScrapingFree, LEEME, LICENCIA, «datos» и «salida». Технические библиотеки находятся в подпапке «programa». При обновлении всё упорядочивается автоматически.",
+   "Уведомление о новой версии при запуске больше не теряется во время сканирования ROM: оно появляется, как только программа готова к работе."
   ],
   "it": [
-   "Cronologia delle versioni: tutti i miglioramenti e le correzioni, versione per versione, in LEEME.txt, nel README e sul sito.",
-   "L'avviso di aggiornamento mostra le novità di tutte le versioni che ti mancano, non solo dell'ultima.",
-   "MAME: le immagini disco .chd non compaiono più come giochi (fanno parte del gioco, come in Batocera)."
+   "Cartella del programma molto più pulita: in alto restano solo KukoScrapingFree, LEEME, LICENCIA, «datos» e «salida». Le librerie tecniche stanno nella sottocartella «programa». Aggiornando si riordina da sola.",
+   "L'avviso di nuova versione all'avvio non si perde più durante la scansione delle ROM: compare appena il programma è pronto all'uso."
   ]
  },
  "historial": [
+  {
+   "version": "0.5.46",
+   "novedades": {
+    "es": [
+     "Carpeta del programa mucho más limpia: arriba solo quedan KukoScrapingFree, LEEME, LICENCIA, «datos» y «salida». Las librerías técnicas van dentro de la subcarpeta «programa». Al actualizar se ordena sola.",
+     "El aviso de versión nueva al abrir el programa ya no se pierde mientras se escanean las ROM: aparece en cuanto el programa está listo para usarse."
+    ],
+    "en": [
+     "Much tidier program folder: only KukoScrapingFree, LEEME, LICENCIA, «datos» and «salida» remain at the top. The technical libraries live inside the «programa» subfolder. Updating tidies it up automatically.",
+     "The new-version notice at startup is no longer lost while the ROMs are being scanned: it appears as soon as the program is ready to use."
+    ],
+    "fr": [
+     "Dossier du programme bien plus propre : en haut il ne reste que KukoScrapingFree, LEEME, LICENCIA, «datos» et «salida». Les bibliothèques techniques sont dans le sous-dossier «programa». La mise à jour fait le rangement toute seule.",
+     "L'avis de nouvelle version à l'ouverture ne se perd plus pendant l'analyse des ROM : il apparaît dès que le programme est prêt à être utilisé."
+    ],
+    "de": [
+     "Viel aufgeräumterer Programmordner: oben bleiben nur KukoScrapingFree, LEEME, LICENCIA, «datos» und «salida». Die technischen Bibliotheken liegen im Unterordner «programa». Beim Aktualisieren wird automatisch aufgeräumt.",
+     "Der Hinweis auf eine neue Version beim Start geht beim Scannen der ROMs nicht mehr verloren: Er erscheint, sobald das Programm einsatzbereit ist."
+    ],
+    "pt": [
+     "Pasta do programa muito mais limpa: em cima ficam só KukoScrapingFree, LEEME, LICENCIA, «datos» e «salida». As bibliotecas técnicas ficam dentro da subpasta «programa». Ao atualizar arruma-se sozinha.",
+     "O aviso de nova versão ao abrir o programa já não se perde enquanto as ROMs são analisadas: aparece assim que o programa está pronto a usar."
+    ],
+    "ru": [
+     "Папка программы стала намного чище: сверху остаются только KukoScrapingFree, LEEME, LICENCIA, «datos» и «salida». Технические библиотеки находятся в подпапке «programa». При обновлении всё упорядочивается автоматически.",
+     "Уведомление о новой версии при запуске больше не теряется во время сканирования ROM: оно появляется, как только программа готова к работе."
+    ],
+    "it": [
+     "Cartella del programma molto più pulita: in alto restano solo KukoScrapingFree, LEEME, LICENCIA, «datos» e «salida». Le librerie tecniche stanno nella sottocartella «programa». Aggiornando si riordina da sola.",
+     "L'avviso di nuova versione all'avvio non si perde più durante la scansione delle ROM: compare appena il programma è pronto all'uso."
+    ]
+   }
+  },
   {
    "version": "0.5.45",
    "novedades": {
