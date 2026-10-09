@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Guía y preguntas frecuentes — KukoScrapingFree</title>
+<meta name="description" content="Empieza a usar KukoScrapingFree en cuatro pasos y resuelve tus dudas con las preguntas frecuentes.">
+<meta name="theme-color" content="#0b1220">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="canonical" href="https://kukoxbmc.github.io/KukoScrapingFree-web/guia.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="KukoScrapingFree">
+<meta property="og:title" content="Guía y preguntas frecuentes — KukoScrapingFree">
+<meta property="og:description" content="Empieza a usar KukoScrapingFree en cuatro pasos y resuelve tus dudas con las preguntas frecuentes.">
+<meta property="og:url" content="https://kukoxbmc.github.io/KukoScrapingFree-web/guia.html">
+<meta property="og:image" content="https://kukoxbmc.github.io/KukoScrapingFree-web/imagenes/vista-previa.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="es_ES">
+<meta name="twitter:card" content="summary_large_image">
+<script>
+/* tema guardado, antes de pintar nada (sin parpadeo) */
+try{var t=localStorage.getItem("kuko-tema");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t);}catch(e){}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;600;700&amp;family=Onest:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@500;700&amp;family=Press+Start+2P&amp;display=swap">
+<link rel="stylesheet" href="css/web.css?v=202610092116">
+</head>
+<body>
+<a class="skip" href="#contenido" data-t="skip">Saltar al contenido</a>
+<div class="carga" id="carga" aria-hidden="true"></div>
+
+<!-- ============================ CABECERA (igual en todos los módulos) ============================ -->
+<header class="top" id="top">
+<div class="top-in">
+<a href="index.html" class="brand" data-nav="inicio"><svg width="34" height="34" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#f2a93b"></rect><path fill="#152137" d="M19 20h26c6 0 9.5 4.5 10.6 10.5l1.9 10.2c.9 4.8-3.7 7.8-7.4 5.2L44.5 42h-25l-5.6 3.9c-3.7 2.6-8.3-.4-7.4-5.2l1.9-10.2C9.5 24.5 13 20 19 20z"></path><path d="M32 25v11M27 31.5l5 5 5-5" fill="none" stroke="#f2a93b" stroke-width="3.8" stroke-linecap="round" stroke-linejoin="round"></path></svg><span>KukoScrapingFree</span></a>
+<nav class="nav" aria-label="Secciones" data-label="nav_label">
+<a href="index.html" data-nav="inicio"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-7 9 7"></path><path d="M5 10v10h5v-6h4v6h5V10"></path></svg><span data-t="nav_home">Inicio</span></a>
+<a href="funciones.html" data-nav="funciones"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"></rect><rect x="14" y="3" width="7" height="7" rx="1.5"></rect><rect x="3" y="14" width="7" height="7" rx="1.5"></rect><rect x="14" y="14" width="7" height="7" rx="1.5"></rect></svg><span data-t="nav_features">Funciones</span></a>
+<a href="galeria.html" data-nav="galeria"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"></rect><circle cx="9" cy="10" r="2"></circle><path d="M21 16l-5-5-9 9"></path></svg><span data-t="nav_gallery">Galería</span></a>
+<a href="guia.html" data-nav="guia" aria-current="page"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"></path><path d="M4 19V5M8 7h7M8 11h5"></path></svg><span data-t="nav_guide">Guía</span></a>
+<a href="novedades.html" data-nav="novedades"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.8 4.7L18.5 9l-4.7 1.8L12 15.5l-1.8-4.7L5.5 9l4.7-1.3z"></path><path d="M18 15l.8 2.2L21 18l-2.2.8L18 21l-.8-2.2L15 18l2.2-.8z"></path></svg><span data-t="nav_news">Novedades</span></a>
+</nav>
+<div class="tools">
+<div class="lang" id="lang">
+<button type="button" class="lang-btn" id="lang-btn" aria-haspopup="true" aria-expanded="false" title="Idioma" data-title="lang_label"><span id="lang-flag"></span><span id="lang-name">Español</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg></button>
+<ul class="lang-menu" id="lang-menu" role="menu" hidden></ul>
+</div>
+<button type="button" class="ibtn" id="theme-btn" title="Cambiar entre tema claro y oscuro" data-title="theme_toggle" aria-label="Cambiar entre tema claro y oscuro">
+<span id="ico-sun"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg></span>
+<span id="ico-moon" hidden><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"></path></svg></span>
+</button>
+<a class="btn btn-a cta-s" href="descargar.html" data-nav="descargar"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M4 21h16"></path></svg><span data-t="nav_download">Descargar gratis</span></a>
+</div>
+</div>
+</header>
+
+<!-- ============================ CONTENIDO DEL MÓDULO ============================ -->
+<main id="contenido" data-pagina="guia" data-mt="mt_guia" data-md="md_guia">
+<section class="phead"><div class="wrap phead-in">
+<p class="crumbs"><a href="index.html" data-t="nav_home">Inicio</a><span aria-hidden="true">/</span><span data-t="nav_guide">Guía</span></p>
+<p class="kicker" data-t="guide_kicker">Guía</p>
+<h1 tabindex="-1" data-t="guide_title">Empieza en cinco minutos</h1>
+<p class="lead" data-t="guide_sub">Cuatro pasos para scrapear tu primera colección y las respuestas a las dudas más habituales.</p>
+</div></section>
+
+<!-- ============================ PRIMEROS PASOS ============================ -->
+<section class="wrap sec" id="pasos">
+<p class="kicker" data-t="how_kicker">Cómo funciona</p>
+<h2 class="h2" data-t="how_title">Cuatro pasos y listo</h2>
+<ol class="timeline">
+<li class="rv"><span class="n">1</span><div class="box"><h3 data-t="h1_t">Descarga y descomprime</h3><p data-t="h1_d">No se instala nada. Todo lo que guarda el programa se queda dentro de su propia carpeta.</p></div></li>
+<li class="rv"><span class="n">2</span><div class="box"><h3 data-t="h2_t">Escribe tu cuenta de ScreenScraper</h3><p data-h="h2_d">Solo tu usuario y tu contraseña de <a href="https://www.screenscraper.fr">screenscraper.fr</a>. Se guardan cifrados en tu equipo.</p></div></li>
+<li class="rv"><span class="n">3</span><div class="box"><h3 data-t="h3_t">Elige tus carpetas</h3><p data-h="h3_d">Tu carpeta de ROMs, en tu disco o en la red (como <code>\\BATOCERA\share\roms</code>), y dónde guardar el resultado. Un asistente te guía al empezar.</p></div></li>
+<li class="rv"><span class="n">4</span><div class="box"><h3 data-t="h4_t">Scrapea y copia a Batocera</h3><p data-t="h4_d">Marca los sistemas, pulsa «Scrapear selección» y, al terminar, copia la carpeta de salida a tu Batocera.</p></div></li>
+</ol>
+</section>
+
+<!-- ============================ PREGUNTAS FRECUENTES ============================ -->
+<section class="band" id="preguntas">
+<div class="wrap sec">
+<p class="kicker" data-t="faq_kicker">Preguntas frecuentes</p>
+<h2 class="h2" data-t="faq_title">Lo que suele preguntarse</h2>
+<div class="search" hidden data-search-box>
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-4-4"></path></svg>
+<input type="search" id="faq-q" autocomplete="off" data-ph="faq_search" placeholder="Busca en las preguntas…" data-label="faq_search" aria-label="Busca en las preguntas…">
+</div>
+<div class="faq" id="faq">
+<details open><summary data-t="q1">¿Cuánto cuesta?</summary><p data-t="a1">Nada. Es freeware: gratuito y de libre distribución, sin anuncios ni funciones de pago.</p></details>
+<details><summary data-t="q2">¿Necesito una cuenta de ScreenScraper?</summary><p data-h="a2">Sí. La cuenta es gratuita y se crea en <a href="https://www.screenscraper.fr">screenscraper.fr</a>. El programa respeta los límites de tu cuenta: hilos, peticiones por minuto y cuota diaria.</p></details>
+<details><summary data-t="q3">¿Puede estropear mi colección?</summary><p data-t="a3">No. Tu carpeta de ROMs nunca se modifica: el programa trabaja sobre una copia en la carpeta de salida, guarda las versiones anteriores de cada gamelist y no borra nada.</p></details>
+<details><summary data-t="q4">¿En qué idiomas está?</summary><p data-t="a4">Castellano, inglés, francés, alemán, portugués, ruso e italiano. La sinopsis de los juegos se descarga en el idioma que elijas.</p></details>
+<details><summary data-t="q5">¿Qué necesito para usarlo?</summary><p data-t="a5">Un ordenador con Windows o Linux y una pantalla de al menos 1280 × 720. Tu Batocera puede estar en la red: no hace falta sacar el disco.</p></details>
+<details><summary data-t="q6">¿Cómo se actualiza el programa?</summary><p data-t="a6">Solo. Al abrirse comprueba si hay una versión nueva, te enseña sus novedades y, si aceptas, se descarga, se instala y se vuelve a abrir. Tus datos y tu carpeta de salida no se tocan, y se guarda la versión anterior por si quieres volver a ella. Si tienes la 0.5.40 o una anterior, descarga la nueva desde esta web una sola vez: a partir de ahí llegarán solas.</p></details>
+<details><summary data-t="q7">¿Dónde guarda el programa mis datos?</summary><p data-t="a7">Todo queda dentro de la carpeta del programa: en «datos» están la configuración, tu cuenta cifrada y el registro, y en «salida», lo que genera. No escribe en ninguna otra parte del equipo.</p></details>
+<details><summary data-t="q8">¿Para qué es la carpeta «programa»?</summary><p data-t="a8">Contiene el programa en sí y sus librerías. No hace falta abrirla: el programa se abre con KukoScrapingFree (KukoScrapingFree.exe en Windows), que está junto a ella.</p></details>
+<details><summary data-t="q9">¿Puedo volver a la versión anterior?</summary><p data-t="a9">Sí. Cada vez que se actualiza, guarda la versión anterior. Si algo no te convence, ve a Ayuda › Acerca de y pulsa «Volver a la versión…».</p></details>
+</div>
+<p class="empty" id="faq-none" hidden data-t="faq_none">No hay ninguna pregunta con esas palabras.</p>
+</div>
+</section>
+
+<section class="wrap sec"><div class="ctaband rv">
+<div><h2 data-t="cta_t">¿Listo para darle vida a tu colección?</h2><p data-t="cta_d">Es gratis, no se instala y funciona en Windows y Linux.</p></div>
+<div class="btns"><a class="btn btn-a" href="descargar.html"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M4 21h16"></path></svg><span data-t="btn_download">Descargar gratis</span></a></div>
+</div></section>
+</main>
+
+<!-- ============================ PIE ============================ -->
+<footer>
+<div class="foot">
+<div>
+<a href="index.html" class="brand"><svg width="30" height="30" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#f2a93b"></rect><path fill="#152137" d="M19 20h26c6 0 9.5 4.5 10.6 10.5l1.9 10.2c.9 4.8-3.7 7.8-7.4 5.2L44.5 42h-25l-5.6 3.9c-3.7 2.6-8.3-.4-7.4-5.2l1.9-10.2C9.5 24.5 13 20 19 20z"></path><path d="M32 25v11M27 31.5l5 5 5-5" fill="none" stroke="#f2a93b" stroke-width="3.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>KukoScrapingFree</a>
+<p data-t="foot_desc">Scraper de ROMs gratuito para Batocera Linux: carátulas, logos, vídeos y fichas de tus juegos desde ScreenScraper.</p>
+<p class="dlv" id="foot-ver"></p>
+</div>
+<div>
+<h2 data-t="foot_sections">Secciones</h2>
+<ul>
+<li><a href="index.html" data-t="nav_home">Inicio</a></li>
+<li><a href="funciones.html" data-t="nav_features">Funciones</a></li>
+<li><a href="galeria.html" data-t="nav_gallery">Galería</a></li>
+<li><a href="guia.html" data-t="nav_guide">Guía</a></li>
+<li><a href="novedades.html" data-t="nav_news">Novedades</a></li>
+<li><a href="descargar.html" data-t="nav_dl">Descargar</a></li>
+</ul>
+</div>
+<div>
+<h2 data-t="foot_project">Proyecto</h2>
+<ul>
+<li><a href="https://github.com/kukoxbmc/KukoScrapingFree-web/releases" data-t="foot_releases">Todas las versiones</a></li>
+<li><a href="https://github.com/kukoxbmc/KukoScrapingFree-web">GitHub</a></li>
+<li><a href="https://www.screenscraper.fr">ScreenScraper.fr</a></li>
+<li><a href="descargar.html#aviso" data-t="disc_title">Descargo de responsabilidad</a></li>
+</ul>
+</div>
+</div>
+<div class="foot-bottom"><span data-h="foot_by">Creado por <b>Kukoman</b> · © 2026 · Freeware · <a href="https://github.com/kukoxbmc/KukoScrapingFree-web">GitHub</a></span><span data-t="foot_indep">Proyecto independiente. Batocera y ScreenScraper pertenecen a sus respectivos autores.</span></div>
+</footer>
+
+<!-- menú de abajo (móvil) -->
+<nav class="tabbar" aria-label="Secciones" data-label="nav_label">
+<a href="index.html" data-nav="inicio"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-7 9 7"></path><path d="M5 10v10h5v-6h4v6h5V10"></path></svg><span data-t="nav_home">Inicio</span></a>
+<a href="funciones.html" data-nav="funciones"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"></rect><rect x="14" y="3" width="7" height="7" rx="1.5"></rect><rect x="3" y="14" width="7" height="7" rx="1.5"></rect><rect x="14" y="14" width="7" height="7" rx="1.5"></rect></svg><span data-t="nav_features">Funciones</span></a>
+<a href="galeria.html" data-nav="galeria"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"></rect><circle cx="9" cy="10" r="2"></circle><path d="M21 16l-5-5-9 9"></path></svg><span data-t="nav_gallery">Galería</span></a>
+<a href="guia.html" data-nav="guia" aria-current="page"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"></path><path d="M4 19V5M8 7h7M8 11h5"></path></svg><span data-t="nav_guide">Guía</span></a>
+<a href="novedades.html" data-nav="novedades"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.8 4.7L18.5 9l-4.7 1.8L12 15.5l-1.8-4.7L5.5 9l4.7-1.3z"></path><path d="M18 15l.8 2.2L21 18l-2.2.8L18 21l-.8-2.2L15 18l2.2-.8z"></path></svg><span data-t="nav_news">Novedades</span></a>
+</nav>
+
+<!-- ventanas -->
+<dialog id="lb" aria-label="Captura">
+<img class="lb-img" id="lb-img" alt="">
+<div class="lb-bar"><span class="lb-cap" id="lb-cap"></span><span class="lb-btns">
+<button type="button" id="lb-prev" data-label="lb_prev" aria-label="Anterior"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"></path></svg></button>
+<button type="button" id="lb-next" data-label="lb_next" aria-label="Siguiente"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"></path></svg></button>
+<button type="button" id="lb-close" data-label="lb_close" aria-label="Cerrar"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg></button>
+</span></div>
+</dialog>
+<dialog id="vd" aria-label="Vídeo">
+<video class="vid" id="vd-video" controls preload="none" poster="imagenes/poster.webp" src="video/presentacion.mp4"></video>
+<div class="lb-bar"><span class="lb-cap">KukoScrapingFree</span><span class="lb-btns"><button type="button" id="vd-close" data-label="video_close" aria-label="Cerrar el vídeo"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg></button></span></div>
+</dialog>
+
+<script src="js/textos.js?v=202610092116"></script>
+<script src="js/web.js?v=202610092116"></script>
+</body>
+</html>

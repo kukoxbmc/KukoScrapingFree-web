@@ -1,0 +1,82 @@
+<!-- ============================ PORTADA ============================ -->
+<section class="hero">
+<div class="wrap hero-in">
+<div class="hero-txt">
+<a href="novedades.html" id="ver-line" class="verline" hidden><span class="dot" aria-hidden="true"></span><span id="ver-text"></span></a>
+<span class="tag" data-t="hero_tag">Scraper de ROMs para Batocera Linux</span>
+<h1 tabindex="-1" data-t="hero_title">Tu colección retro, con sus carátulas, logos, vídeos y fichas.</h1>
+<p class="hero-sub" data-t="hero_sub">KukoScrapingFree busca cada juego en ScreenScraper, descarga sus datos e imágenes en tu idioma y los deja listos para Batocera. Sin tocar nunca tu carpeta de ROMs.</p>
+<div class="hero-btns">
+<a href="descargar.html" class="btn btn-a">{{I_DESCARGA}}<span data-t="btn_download">Descargar gratis</span></a>
+<button type="button" class="btn btn-b" data-video><svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"></path></svg><span data-t="hero_watch">Ver el vídeo</span></button>
+</div>
+<ul class="badges">
+<li data-t="badge_free">100 % gratuito</li>
+<li data-t="badge_os">Windows y Linux</li>
+<li data-t="badge_langs">7 idiomas</li>
+<li data-t="badge_systems">256 sistemas de Batocera</li>
+<li data-t="badge_update">Se actualiza solo</li>
+</ul>
+</div>
+<figure class="tv">
+<div class="tv-body">
+<div class="tv-screen">
+<video id="hero-video" autoplay muted loop playsinline preload="metadata" poster="imagenes/poster.webp" src="video/bucle.mp4" data-alt="alt_main" aria-label="KukoScrapingFree scrapeando Super Nintendo y Mega Drive"></video>
+<div class="tv-glare"></div>
+<button type="button" class="tv-play" data-video><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"></path></svg><span data-t="hero_watch">Ver el vídeo</span></button>
+</div>
+<div class="tv-foot"><span class="tv-label">KUKO&nbsp;·&nbsp;CH&nbsp;01</span><span class="tv-led" aria-hidden="true"></span></div>
+</div>
+<figcaption class="tv-cap" data-t="hero_screen">Así scrapea: marca los sistemas, pulsa y listo</figcaption>
+</figure>
+</div>
+</section>
+
+<!-- ============================ CONTADORES ============================ -->
+<section class="wrap stats" aria-live="polite">
+<div class="stats-box">
+<div>
+<p class="stat-label"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"></path><circle cx="12" cy="12" r="3"></circle></svg><span data-t="stats_visits">Visitas a la web</span></p>
+<div class="digits" id="cnt-visitas" data-min="6"></div>
+</div>
+<div class="dl-stats">
+<p class="stat-label" style="margin:0"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M4 21h16"></path></svg><span data-t="stats_downloads">Descargas</span></p>
+<div class="dl-row"><span class="dl-name">{{I_WIN_Y}}<span data-t="stats_win">Windows</span></span><div class="digits sm" id="cnt-windows" data-min="4"></div></div>
+<div class="dl-row"><span class="dl-name">{{I_LINUX_Y}}<span data-t="stats_linux">Linux</span></span><div class="digits sm" id="cnt-linux" data-min="4"></div></div>
+</div>
+<p class="stats-note" data-t="stats_note">Las descargas se cuentan en tiempo real desde GitHub.</p>
+</div>
+</section>
+
+<!-- ============================ EXPLORA ============================ -->
+<section class="wrap">
+<p class="kicker" data-t="exp_kicker">Explora</p>
+<h2 class="h2" data-t="exp_title">Todo sobre el programa, por partes</h2>
+<div class="explore">
+<a class="xcard big rv" href="funciones.html">
+<div class="pic"><img src="imagenes/principal.webp" width="1916" height="1076" loading="lazy" decoding="async" alt="" ></div>
+<div class="body"><h3><span data-t="nav_features">Funciones</span><span class="arrow">{{I_FLECHA}}</span></h3><p data-t="exp_feat">Lo que hace por tu colección, y el antes y después de pasar por el programa.</p></div>
+</a>
+<a class="xcard big rv" href="galeria.html">
+<div class="pic"><img src="imagenes/ficha.webp" width="1916" height="1076" loading="lazy" decoding="async" alt=""></div>
+<div class="body"><h3><span data-t="nav_gallery">Galería</span><span class="arrow">{{I_FLECHA}}</span></h3><p data-t="exp_gal">Capturas del programa, composiciones de ejemplo y el vídeo de presentación.</p></div>
+</a>
+<a class="xcard rv" href="guia.html">
+<div class="body"><span class="ico">{{I_GUIA}}</span><h3><span data-t="nav_guide">Guía</span><span class="arrow">{{I_FLECHA}}</span></h3><p data-t="exp_guide">Empieza en cuatro pasos y resuelve tus dudas en las preguntas frecuentes.</p></div>
+</a>
+<a class="xcard rv" href="novedades.html">
+<div class="body"><span class="ico">{{I_NOVEDADES}}</span><h3><span data-t="nav_news">Novedades</span><span class="arrow">{{I_FLECHA}}</span></h3><p data-t="exp_news">Las mejoras y arreglos de cada versión.</p><ul class="teaser" id="news-teaser"></ul><span class="meta" id="news-meta"></span></div>
+</a>
+<a class="xcard accent rv" href="descargar.html">
+<div class="body"><span class="ico">{{I_DESCARGA}}</span><h3><span data-t="nav_dl">Descargar</span><span class="arrow">{{I_FLECHA}}</span></h3><p data-t="exp_dl">Para Windows y Linux. Sin instalación: descomprime y abre.</p><span class="meta" id="dl-meta"></span></div>
+</a>
+</div>
+</section>
+
+<!-- ============================ GRATIS ============================ -->
+<section class="wrap sec">
+<div class="duo">
+<div class="note n-free rv"><span class="ico"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="8" width="18" height="4" rx="1"></rect><path d="M5 12v8h14v-8M12 8v12M12 8c-1.5-3.5-6-3.5-5 0M12 8c1.5-3.5 6-3.5 5 0"></path></svg></span><div><h2 data-t="free_title">Gratis de verdad, y para siempre</h2><p data-t="free_text">Sin anuncios, sin suscripciones y sin funciones de pago. Puedes usarlo, copiarlo y compartirlo con quien quieras.</p></div></div>
+<div class="note n-scam rv"><span class="ico"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l9.5 17h-19z"></path><path d="M12 10v4.5M12 17.5h.01"></path></svg></span><div><h2 data-t="scam_title">¿Te lo han cobrado?</h2><p data-t="scam_text">Entonces te han estafado. KukoScrapingFree no se vende nunca. Descárgalo solo desde esta web y reclama tu dinero a quien te lo vendió.</p></div></div>
+</div>
+</section>

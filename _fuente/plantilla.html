@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+{{BASE}}<title>{{TITULO}}</title>
+<meta name="description" content="{{DESCRIPCION}}">
+<meta name="theme-color" content="#0b1220">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="canonical" href="{{URL}}">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="KukoScrapingFree">
+<meta property="og:title" content="{{TITULO}}">
+<meta property="og:description" content="{{DESCRIPCION}}">
+<meta property="og:url" content="{{URL}}">
+<meta property="og:image" content="https://kukoxbmc.github.io/KukoScrapingFree-web/imagenes/vista-previa.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="es_ES">
+<meta name="twitter:card" content="summary_large_image">
+<script>
+/* tema guardado, antes de pintar nada (sin parpadeo) */
+try{var t=localStorage.getItem("kuko-tema");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t);}catch(e){}
+{{REDIRECCION}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;600;700&amp;family=Onest:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@500;700&amp;family=Press+Start+2P&amp;display=swap">
+<link rel="stylesheet" href="css/web.css?v={{V}}">
+</head>
+<body>
+<a class="skip" href="#contenido" data-t="skip">Saltar al contenido</a>
+<div class="carga" id="carga" aria-hidden="true"></div>
+
+<!-- ============================ CABECERA (igual en todos los módulos) ============================ -->
+<header class="top" id="top">
+<div class="top-in">
+<a href="index.html" class="brand" data-nav="inicio"><svg width="34" height="34" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#f2a93b"></rect><path fill="#152137" d="M19 20h26c6 0 9.5 4.5 10.6 10.5l1.9 10.2c.9 4.8-3.7 7.8-7.4 5.2L44.5 42h-25l-5.6 3.9c-3.7 2.6-8.3-.4-7.4-5.2l1.9-10.2C9.5 24.5 13 20 19 20z"></path><path d="M32 25v11M27 31.5l5 5 5-5" fill="none" stroke="#f2a93b" stroke-width="3.8" stroke-linecap="round" stroke-linejoin="round"></path></svg><span>KukoScrapingFree</span></a>
+<nav class="nav" aria-label="Secciones" data-label="nav_label">
+{{NAV}}
+</nav>
+<div class="tools">
+<div class="lang" id="lang">
+<button type="button" class="lang-btn" id="lang-btn" aria-haspopup="true" aria-expanded="false" title="Idioma" data-title="lang_label"><span id="lang-flag"></span><span id="lang-name">Español</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg></button>
+<ul class="lang-menu" id="lang-menu" role="menu" hidden></ul>
+</div>
+<button type="button" class="ibtn" id="theme-btn" title="Cambiar entre tema claro y oscuro" data-title="theme_toggle" aria-label="Cambiar entre tema claro y oscuro">
+<span id="ico-sun"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg></span>
+<span id="ico-moon" hidden><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"></path></svg></span>
+</button>
+<a class="btn btn-a cta-s" href="descargar.html" data-nav="descargar"{{CTA_ACTUAL}}><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M4 21h16"></path></svg><span data-t="nav_download">Descargar gratis</span></a>
+</div>
+</div>
+</header>
+
+<!-- ============================ CONTENIDO DEL MÓDULO ============================ -->
+<main id="contenido" data-pagina="{{PAGINA}}" data-mt="{{MT}}" data-md="{{MD}}">
+{{CONTENIDO}}
+</main>
+
+<!-- ============================ PIE ============================ -->
+<footer>
+<div class="foot">
+<div>
+<a href="index.html" class="brand"><svg width="30" height="30" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#f2a93b"></rect><path fill="#152137" d="M19 20h26c6 0 9.5 4.5 10.6 10.5l1.9 10.2c.9 4.8-3.7 7.8-7.4 5.2L44.5 42h-25l-5.6 3.9c-3.7 2.6-8.3-.4-7.4-5.2l1.9-10.2C9.5 24.5 13 20 19 20z"></path><path d="M32 25v11M27 31.5l5 5 5-5" fill="none" stroke="#f2a93b" stroke-width="3.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>KukoScrapingFree</a>
+<p data-t="foot_desc">Scraper de ROMs gratuito para Batocera Linux: carátulas, logos, vídeos y fichas de tus juegos desde ScreenScraper.</p>
+<p class="dlv" id="foot-ver"></p>
+</div>
+<div>
+<h2 data-t="foot_sections">Secciones</h2>
+<ul>
+<li><a href="index.html" data-t="nav_home">Inicio</a></li>
+<li><a href="funciones.html" data-t="nav_features">Funciones</a></li>
+<li><a href="galeria.html" data-t="nav_gallery">Galería</a></li>
+<li><a href="guia.html" data-t="nav_guide">Guía</a></li>
+<li><a href="novedades.html" data-t="nav_news">Novedades</a></li>
+<li><a href="descargar.html" data-t="nav_dl">Descargar</a></li>
+</ul>
+</div>
+<div>
+<h2 data-t="foot_project">Proyecto</h2>
+<ul>
+<li><a href="https://github.com/kukoxbmc/KukoScrapingFree-web/releases" data-t="foot_releases">Todas las versiones</a></li>
+<li><a href="https://github.com/kukoxbmc/KukoScrapingFree-web">GitHub</a></li>
+<li><a href="https://www.screenscraper.fr">ScreenScraper.fr</a></li>
+<li><a href="descargar.html#aviso" data-t="disc_title">Descargo de responsabilidad</a></li>
+</ul>
+</div>
+</div>
+<div class="foot-bottom"><span data-h="foot_by">Creado por <b>Kukoman</b> · © 2026 · Freeware · <a href="https://github.com/kukoxbmc/KukoScrapingFree-web">GitHub</a></span><span data-t="foot_indep">Proyecto independiente. Batocera y ScreenScraper pertenecen a sus respectivos autores.</span></div>
+</footer>
+
+<!-- menú de abajo (móvil) -->
+<nav class="tabbar" aria-label="Secciones" data-label="nav_label">
+{{TABBAR}}
+</nav>
+
+<!-- ventanas -->
+<dialog id="lb" aria-label="Captura">
+<img class="lb-img" id="lb-img" alt="">
+<div class="lb-bar"><span class="lb-cap" id="lb-cap"></span><span class="lb-btns">
+<button type="button" id="lb-prev" data-label="lb_prev" aria-label="Anterior"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"></path></svg></button>
+<button type="button" id="lb-next" data-label="lb_next" aria-label="Siguiente"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"></path></svg></button>
+<button type="button" id="lb-close" data-label="lb_close" aria-label="Cerrar"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg></button>
+</span></div>
+</dialog>
+<dialog id="vd" aria-label="Vídeo">
+<video class="vid" id="vd-video" controls preload="none" poster="imagenes/poster.webp" src="video/presentacion.mp4"></video>
+<div class="lb-bar"><span class="lb-cap">KukoScrapingFree</span><span class="lb-btns"><button type="button" id="vd-close" data-label="video_close" aria-label="Cerrar el vídeo"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg></button></span></div>
+</dialog>
+
+<script src="js/textos.js?v={{V}}"></script>
+<script src="js/web.js?v={{V}}"></script>
+</body>
+</html>
