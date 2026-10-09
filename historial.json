@@ -1,5 +1,38 @@
 [
  {
+  "version": "0.5.46",
+  "novedades": {
+   "es": [
+    "Carpeta del programa mucho más limpia: arriba solo quedan KukoScrapingFree, LEEME, LICENCIA, «datos» y «salida». Las librerías técnicas van dentro de la subcarpeta «programa». Al actualizar se ordena sola.",
+    "El aviso de versión nueva al abrir el programa ya no se pierde mientras se escanean las ROM: aparece en cuanto el programa está listo para usarse."
+   ],
+   "en": [
+    "Much tidier program folder: only KukoScrapingFree, LEEME, LICENCIA, «datos» and «salida» remain at the top. The technical libraries live inside the «programa» subfolder. Updating tidies it up automatically.",
+    "The new-version notice at startup is no longer lost while the ROMs are being scanned: it appears as soon as the program is ready to use."
+   ],
+   "fr": [
+    "Dossier du programme bien plus propre : en haut il ne reste que KukoScrapingFree, LEEME, LICENCIA, «datos» et «salida». Les bibliothèques techniques sont dans le sous-dossier «programa». La mise à jour fait le rangement toute seule.",
+    "L'avis de nouvelle version à l'ouverture ne se perd plus pendant l'analyse des ROM : il apparaît dès que le programme est prêt à être utilisé."
+   ],
+   "de": [
+    "Viel aufgeräumterer Programmordner: oben bleiben nur KukoScrapingFree, LEEME, LICENCIA, «datos» und «salida». Die technischen Bibliotheken liegen im Unterordner «programa». Beim Aktualisieren wird automatisch aufgeräumt.",
+    "Der Hinweis auf eine neue Version beim Start geht beim Scannen der ROMs nicht mehr verloren: Er erscheint, sobald das Programm einsatzbereit ist."
+   ],
+   "pt": [
+    "Pasta do programa muito mais limpa: em cima ficam só KukoScrapingFree, LEEME, LICENCIA, «datos» e «salida». As bibliotecas técnicas ficam dentro da subpasta «programa». Ao atualizar arruma-se sozinha.",
+    "O aviso de nova versão ao abrir o programa já não se perde enquanto as ROMs são analisadas: aparece assim que o programa está pronto a usar."
+   ],
+   "ru": [
+    "Папка программы стала намного чище: сверху остаются только KukoScrapingFree, LEEME, LICENCIA, «datos» и «salida». Технические библиотеки находятся в подпапке «programa». При обновлении всё упорядочивается автоматически.",
+    "Уведомление о новой версии при запуске больше не теряется во время сканирования ROM: оно появляется, как только программа готова к работе."
+   ],
+   "it": [
+    "Cartella del programma molto più pulita: in alto restano solo KukoScrapingFree, LEEME, LICENCIA, «datos» e «salida». Le librerie tecniche stanno nella sottocartella «programa». Aggiornando si riordina da sola.",
+    "L'avviso di nuova versione all'avvio non si perde più durante la scansione delle ROM: compare appena il programma è pronto all'uso."
+   ]
+  }
+ },
+ {
   "version": "0.5.45",
   "novedades": {
    "es": [
