@@ -1,5 +1,45 @@
 [
  {
+  "version": "0.5.48",
+  "novedades": {
+   "es": [
+    "Los botones del sistema («Sí», «No», «Aceptar», «Cancelar»…) y los menús de copiar y pegar salen siempre en el idioma del programa; antes, en la versión descargada, algunos salían en inglés.",
+    "Comprobación de copia original: el programa compara sus ficheros con la lista oficial publicada en GitHub y lo indica en «Acerca de» («✔ Copia original verificada»). Si una copia está modificada o dañada, avisa; y al actualizar, no guarda una versión anterior manipulada.",
+    "Resumen al terminar de scrapear: encontrados, no encontrados, errores, tiempo y consultas gastadas, con «Buscar a mano» para encontrar por su nombre los juegos que ScreenScraper no reconoce (también con el botón derecho sobre un juego)."
+   ],
+   "en": [
+    "System buttons («Yes», «No», «OK», «Cancel»…) and the copy/paste menus always appear in the program's language; before, in the downloaded version, some were in English.",
+    "Original copy check: the program compares its files with the official list published on GitHub and shows it in «About» («✔ Verified original copy»). If a copy is modified or damaged it warns you, and when updating it doesn't keep a tampered previous version.",
+    "Summary when scraping finishes: found, not found, errors, time and requests used, with «Search manually» to find by name the games ScreenScraper doesn't recognise (also by right-clicking a game)."
+   ],
+   "fr": [
+    "Les boutons du système («Oui», «Non», «OK», «Annuler»…) et les menus copier-coller sont toujours dans la langue du programme ; avant, dans la version téléchargée, certains étaient en anglais.",
+    "Vérification de copie originale : le programme compare ses fichiers à la liste officielle publiée sur GitHub et l'indique dans «À propos» («✔ Copie originale vérifiée»). Si une copie est modifiée ou endommagée, il prévient ; et lors d'une mise à jour, il ne garde pas une version précédente altérée.",
+    "Résumé à la fin du scraping : trouvés, non trouvés, erreurs, temps et requêtes utilisées, avec «Chercher à la main» pour trouver par leur nom les jeux que ScreenScraper ne reconnaît pas (aussi par clic droit sur un jeu)."
+   ],
+   "de": [
+    "Die Systemschaltflächen («Ja», «Nein», «OK», «Abbrechen»…) und die Menüs zum Kopieren und Einfügen erscheinen immer in der Sprache des Programms; vorher waren in der heruntergeladenen Version einige auf Englisch.",
+    "Prüfung auf Originalkopie: Das Programm vergleicht seine Dateien mit der offiziellen Liste auf GitHub und zeigt das Ergebnis unter «Über» («✔ Originalkopie bestätigt»). Ist eine Kopie verändert oder beschädigt, warnt es; beim Aktualisieren wird eine manipulierte vorherige Version nicht aufbewahrt.",
+    "Zusammenfassung nach dem Scraping: gefunden, nicht gefunden, Fehler, Dauer und verbrauchte Anfragen, mit «Manuell suchen», um Spiele, die ScreenScraper nicht erkennt, nach Namen zu finden (auch per Rechtsklick auf ein Spiel)."
+   ],
+   "pt": [
+    "Os botões do sistema («Sim», «Não», «OK», «Cancelar»…) e os menus de copiar e colar aparecem sempre no idioma do programa; antes, na versão transferida, alguns apareciam em inglês.",
+    "Verificação de cópia original: o programa compara os seus ficheiros com a lista oficial publicada no GitHub e indica-o em «Acerca de» («✔ Cópia original verificada»). Se uma cópia estiver modificada ou danificada, avisa; e ao atualizar não guarda uma versão anterior adulterada.",
+    "Resumo ao terminar o scraping: encontrados, não encontrados, erros, tempo e pedidos gastos, com «Pesquisar à mão» para encontrar pelo nome os jogos que o ScreenScraper não reconhece (também com o botão direito sobre um jogo)."
+   ],
+   "ru": [
+    "Системные кнопки («Да», «Нет», «OK», «Отмена»…) и меню копирования и вставки всегда на языке программы; раньше в скачанной версии некоторые были на английском.",
+    "Проверка оригинальности: программа сравнивает свои файлы с официальным списком на GitHub и показывает результат в «О программе» («✔ Оригинальная копия подтверждена»). Если копия изменена или повреждена, она предупреждает, а при обновлении не сохраняет изменённую предыдущую версию.",
+    "Итоги после скрапинга: найдено, не найдено, ошибки, время и потраченные запросы, с «Искать вручную», чтобы найти по названию игры, которые ScreenScraper не распознаёт (также через правый щелчок по игре)."
+   ],
+   "it": [
+    "I pulsanti di sistema («Sì», «No», «OK», «Annulla»…) e i menu di copia e incolla sono sempre nella lingua del programma; prima, nella versione scaricata, alcuni erano in inglese.",
+    "Verifica della copia originale: il programma confronta i suoi file con l'elenco ufficiale pubblicato su GitHub e lo indica in «Informazioni» («✔ Copia originale verificata»). Se una copia è modificata o danneggiata avvisa; e durante l'aggiornamento non conserva una versione precedente manomessa.",
+    "Riepilogo alla fine dello scraping: trovati, non trovati, errori, tempo e richieste usate, con «Cerca a mano» per trovare per nome i giochi che ScreenScraper non riconosce (anche con il tasto destro su un gioco)."
+   ]
+  }
+ },
+ {
   "version": "0.5.47",
   "novedades": {
    "es": [
