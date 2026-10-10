@@ -1,5 +1,38 @@
 [
  {
+  "version": "0.5.47",
+  "novedades": {
+   "es": [
+    "Ajustes por sistema: cada sistema puede tener sus propias regiones, medios (qué se descarga y qué es obligatorio) y plantilla de mix. Botón derecho sobre un sistema › «Ajustes de este sistema…», o Ajustes › Por sistema.",
+    "Scrapear lo que falta (botón «Lo que falta» o Ctrl+Mayús+R): solo los juegos sin datos, los incompletos o los que no tienen una imagen o un dato concreto. Ahorra cuota de ScreenScraper."
+   ],
+   "en": [
+    "Per-system settings: each system can have its own regions, media (what is downloaded and what is required) and mix template. Right-click a system › «Settings for this system…», or Settings › Per system.",
+    "Scrape what's missing («What's missing» button or Ctrl+Shift+R): only games with no data, incomplete ones, or those missing a specific image or field. Saves ScreenScraper quota."
+   ],
+   "fr": [
+    "Réglages par système : chaque système peut avoir ses propres régions, médias (ce qui est téléchargé et ce qui est obligatoire) et modèle de mix. Clic droit sur un système › «Réglages de ce système…», ou Réglages › Par système.",
+    "Scraper ce qui manque (bouton «Ce qui manque» ou Ctrl+Maj+R) : seulement les jeux sans données, incomplets ou sans une image ou une donnée précise. Économise le quota ScreenScraper."
+   ],
+   "de": [
+    "Einstellungen pro System: Jedes System kann eigene Regionen, Medien (was heruntergeladen wird und was Pflicht ist) und eine eigene Mix-Vorlage haben. Rechtsklick auf ein System › «Einstellungen für dieses System…» oder Einstellungen › Pro System.",
+    "Fehlendes scrapen (Schaltfläche «Fehlendes» oder Strg+Umschalt+R): nur Spiele ohne Daten, unvollständige oder solche ohne ein bestimmtes Bild bzw. Feld. Spart ScreenScraper-Kontingent."
+   ],
+   "pt": [
+    "Definições por sistema: cada sistema pode ter as suas próprias regiões, média (o que se transfere e o que é obrigatório) e modelo de mix. Botão direito sobre um sistema › «Definições deste sistema…», ou Definições › Por sistema.",
+    "Fazer scraping do que falta (botão «O que falta» ou Ctrl+Shift+R): só os jogos sem dados, os incompletos ou os que não têm uma imagem ou um dado concreto. Poupa quota do ScreenScraper."
+   ],
+   "ru": [
+    "Настройки по системам: у каждой системы могут быть свои регионы, медиа (что скачивать и что обязательно) и шаблон микса. Правый щелчок по системе › «Настройки этой системы…» или Настройки › По системам.",
+    "Скрапить недостающее (кнопка «Недостающее» или Ctrl+Shift+R): только игры без данных, неполные или без конкретного изображения или поля. Экономит квоту ScreenScraper."
+   ],
+   "it": [
+    "Impostazioni per sistema: ogni sistema può avere regioni, media (cosa si scarica e cosa è obbligatorio) e modello di mix propri. Tasto destro su un sistema › «Impostazioni di questo sistema…», oppure Impostazioni › Per sistema.",
+    "Scraping di ciò che manca (pulsante «Ciò che manca» o Ctrl+Maiusc+R): solo i giochi senza dati, quelli incompleti o senza un'immagine o un dato preciso. Risparmia quota di ScreenScraper."
+   ]
+  }
+ },
+ {
   "version": "0.5.46",
   "novedades": {
    "es": [
