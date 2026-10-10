@@ -1,49 +1,82 @@
 {
- "version": "0.5.46",
- "fecha": "2026-10-09T12:34:48Z",
+ "version": "0.5.47",
+ "fecha": "2026-10-10T04:35:20Z",
  "sha256": {
-  "windows": "ae000370e5aa3cc85edc0c51bda7e126cd6f4c362ed67097e44bdad73720979a",
-  "linux": "02673f338e9672efe0726767e36e3ebe19e37aeab3f1d0de2ec0beefbb8917e0"
+  "windows": "2e9d75dc1460ec8e5498bfab3b7bd25c6d390f6f6a182852ba89c53c8d4b5daf",
+  "linux": "8672b5fc517a8b4ef9725711f0b93cfc54d0fe361d93e1174c5bc622c736e11e"
  },
  "tamano": {
-  "windows": 48626473,
-  "linux": 87967159
+  "windows": 48726741,
+  "linux": 88131933
  },
  "descomprimido": {
-  "windows": 120594914,
-  "linux": 230282273
+  "windows": 120876781,
+  "linux": 230748067
  },
  "novedades": {
   "es": [
-   "Carpeta del programa mucho más limpia: arriba solo quedan KukoScrapingFree, LEEME, LICENCIA, «datos» y «salida». Las librerías técnicas van dentro de la subcarpeta «programa». Al actualizar se ordena sola.",
-   "El aviso de versión nueva al abrir el programa ya no se pierde mientras se escanean las ROM: aparece en cuanto el programa está listo para usarse."
+   "Ajustes por sistema: cada sistema puede tener sus propias regiones, medios (qué se descarga y qué es obligatorio) y plantilla de mix. Botón derecho sobre un sistema › «Ajustes de este sistema…», o Ajustes › Por sistema.",
+   "Scrapear lo que falta (botón «Lo que falta» o Ctrl+Mayús+R): solo los juegos sin datos, los incompletos o los que no tienen una imagen o un dato concreto. Ahorra cuota de ScreenScraper."
   ],
   "en": [
-   "Much tidier program folder: only KukoScrapingFree, LEEME, LICENCIA, «datos» and «salida» remain at the top. The technical libraries live inside the «programa» subfolder. Updating tidies it up automatically.",
-   "The new-version notice at startup is no longer lost while the ROMs are being scanned: it appears as soon as the program is ready to use."
+   "Per-system settings: each system can have its own regions, media (what is downloaded and what is required) and mix template. Right-click a system › «Settings for this system…», or Settings › Per system.",
+   "Scrape what's missing («What's missing» button or Ctrl+Shift+R): only games with no data, incomplete ones, or those missing a specific image or field. Saves ScreenScraper quota."
   ],
   "fr": [
-   "Dossier du programme bien plus propre : en haut il ne reste que KukoScrapingFree, LEEME, LICENCIA, «datos» et «salida». Les bibliothèques techniques sont dans le sous-dossier «programa». La mise à jour fait le rangement toute seule.",
-   "L'avis de nouvelle version à l'ouverture ne se perd plus pendant l'analyse des ROM : il apparaît dès que le programme est prêt à être utilisé."
+   "Réglages par système : chaque système peut avoir ses propres régions, médias (ce qui est téléchargé et ce qui est obligatoire) et modèle de mix. Clic droit sur un système › «Réglages de ce système…», ou Réglages › Par système.",
+   "Scraper ce qui manque (bouton «Ce qui manque» ou Ctrl+Maj+R) : seulement les jeux sans données, incomplets ou sans une image ou une donnée précise. Économise le quota ScreenScraper."
   ],
   "de": [
-   "Viel aufgeräumterer Programmordner: oben bleiben nur KukoScrapingFree, LEEME, LICENCIA, «datos» und «salida». Die technischen Bibliotheken liegen im Unterordner «programa». Beim Aktualisieren wird automatisch aufgeräumt.",
-   "Der Hinweis auf eine neue Version beim Start geht beim Scannen der ROMs nicht mehr verloren: Er erscheint, sobald das Programm einsatzbereit ist."
+   "Einstellungen pro System: Jedes System kann eigene Regionen, Medien (was heruntergeladen wird und was Pflicht ist) und eine eigene Mix-Vorlage haben. Rechtsklick auf ein System › «Einstellungen für dieses System…» oder Einstellungen › Pro System.",
+   "Fehlendes scrapen (Schaltfläche «Fehlendes» oder Strg+Umschalt+R): nur Spiele ohne Daten, unvollständige oder solche ohne ein bestimmtes Bild bzw. Feld. Spart ScreenScraper-Kontingent."
   ],
   "pt": [
-   "Pasta do programa muito mais limpa: em cima ficam só KukoScrapingFree, LEEME, LICENCIA, «datos» e «salida». As bibliotecas técnicas ficam dentro da subpasta «programa». Ao atualizar arruma-se sozinha.",
-   "O aviso de nova versão ao abrir o programa já não se perde enquanto as ROMs são analisadas: aparece assim que o programa está pronto a usar."
+   "Definições por sistema: cada sistema pode ter as suas próprias regiões, média (o que se transfere e o que é obrigatório) e modelo de mix. Botão direito sobre um sistema › «Definições deste sistema…», ou Definições › Por sistema.",
+   "Fazer scraping do que falta (botão «O que falta» ou Ctrl+Shift+R): só os jogos sem dados, os incompletos ou os que não têm uma imagem ou um dado concreto. Poupa quota do ScreenScraper."
   ],
   "ru": [
-   "Папка программы стала намного чище: сверху остаются только KukoScrapingFree, LEEME, LICENCIA, «datos» и «salida». Технические библиотеки находятся в подпапке «programa». При обновлении всё упорядочивается автоматически.",
-   "Уведомление о новой версии при запуске больше не теряется во время сканирования ROM: оно появляется, как только программа готова к работе."
+   "Настройки по системам: у каждой системы могут быть свои регионы, медиа (что скачивать и что обязательно) и шаблон микса. Правый щелчок по системе › «Настройки этой системы…» или Настройки › По системам.",
+   "Скрапить недостающее (кнопка «Недостающее» или Ctrl+Shift+R): только игры без данных, неполные или без конкретного изображения или поля. Экономит квоту ScreenScraper."
   ],
   "it": [
-   "Cartella del programma molto più pulita: in alto restano solo KukoScrapingFree, LEEME, LICENCIA, «datos» e «salida». Le librerie tecniche stanno nella sottocartella «programa». Aggiornando si riordina da sola.",
-   "L'avviso di nuova versione all'avvio non si perde più durante la scansione delle ROM: compare appena il programma è pronto all'uso."
+   "Impostazioni per sistema: ogni sistema può avere regioni, media (cosa si scarica e cosa è obbligatorio) e modello di mix propri. Tasto destro su un sistema › «Impostazioni di questo sistema…», oppure Impostazioni › Per sistema.",
+   "Scraping di ciò che manca (pulsante «Ciò che manca» o Ctrl+Maiusc+R): solo i giochi senza dati, quelli incompleti o senza un'immagine o un dato preciso. Risparmia quota di ScreenScraper."
   ]
  },
  "historial": [
+  {
+   "version": "0.5.47",
+   "novedades": {
+    "es": [
+     "Ajustes por sistema: cada sistema puede tener sus propias regiones, medios (qué se descarga y qué es obligatorio) y plantilla de mix. Botón derecho sobre un sistema › «Ajustes de este sistema…», o Ajustes › Por sistema.",
+     "Scrapear lo que falta (botón «Lo que falta» o Ctrl+Mayús+R): solo los juegos sin datos, los incompletos o los que no tienen una imagen o un dato concreto. Ahorra cuota de ScreenScraper."
+    ],
+    "en": [
+     "Per-system settings: each system can have its own regions, media (what is downloaded and what is required) and mix template. Right-click a system › «Settings for this system…», or Settings › Per system.",
+     "Scrape what's missing («What's missing» button or Ctrl+Shift+R): only games with no data, incomplete ones, or those missing a specific image or field. Saves ScreenScraper quota."
+    ],
+    "fr": [
+     "Réglages par système : chaque système peut avoir ses propres régions, médias (ce qui est téléchargé et ce qui est obligatoire) et modèle de mix. Clic droit sur un système › «Réglages de ce système…», ou Réglages › Par système.",
+     "Scraper ce qui manque (bouton «Ce qui manque» ou Ctrl+Maj+R) : seulement les jeux sans données, incomplets ou sans une image ou une donnée précise. Économise le quota ScreenScraper."
+    ],
+    "de": [
+     "Einstellungen pro System: Jedes System kann eigene Regionen, Medien (was heruntergeladen wird und was Pflicht ist) und eine eigene Mix-Vorlage haben. Rechtsklick auf ein System › «Einstellungen für dieses System…» oder Einstellungen › Pro System.",
+     "Fehlendes scrapen (Schaltfläche «Fehlendes» oder Strg+Umschalt+R): nur Spiele ohne Daten, unvollständige oder solche ohne ein bestimmtes Bild bzw. Feld. Spart ScreenScraper-Kontingent."
+    ],
+    "pt": [
+     "Definições por sistema: cada sistema pode ter as suas próprias regiões, média (o que se transfere e o que é obrigatório) e modelo de mix. Botão direito sobre um sistema › «Definições deste sistema…», ou Definições › Por sistema.",
+     "Fazer scraping do que falta (botão «O que falta» ou Ctrl+Shift+R): só os jogos sem dados, os incompletos ou os que não têm uma imagem ou um dado concreto. Poupa quota do ScreenScraper."
+    ],
+    "ru": [
+     "Настройки по системам: у каждой системы могут быть свои регионы, медиа (что скачивать и что обязательно) и шаблон микса. Правый щелчок по системе › «Настройки этой системы…» или Настройки › По системам.",
+     "Скрапить недостающее (кнопка «Недостающее» или Ctrl+Shift+R): только игры без данных, неполные или без конкретного изображения или поля. Экономит квоту ScreenScraper."
+    ],
+    "it": [
+     "Impostazioni per sistema: ogni sistema può avere regioni, media (cosa si scarica e cosa è obbligatorio) e modello di mix propri. Tasto destro su un sistema › «Impostazioni di questo sistema…», oppure Impostazioni › Per sistema.",
+     "Scraping di ciò che manca (pulsante «Ciò che manca» o Ctrl+Maiusc+R): solo i giochi senza dati, quelli incompleti o senza un'immagine o un dato preciso. Risparmia quota di ScreenScraper."
+    ]
+   }
+  },
   {
    "version": "0.5.46",
    "novedades": {
