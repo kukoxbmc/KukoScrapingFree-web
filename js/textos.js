@@ -132,7 +132,11 @@ es: {
   foot_desc: "Scraper de ROMs gratuito para Batocera Linux: carátulas, logos, vídeos y fichas de tus juegos desde ScreenScraper.",
   foot_sections: "Secciones",
   foot_project: "Proyecto",
-  foot_releases: "Todas las versiones"
+  foot_releases: "Todas las versiones",
+  f11_t: "Ajustes por sistema",
+  f11_d: "Cada sistema con sus propias regiones, medios y plantilla de mix: en arcade, captura y marquesina; en Super Nintendo, caja 3D y Europa primero.",
+  f12_t: "Scrapear solo lo que falta",
+  f12_d: "Elige qué juegos scrapear según lo que les falta: sin datos, incompletos o sin una imagen o un dato concreto. Antes de empezar te dice cuántos son, para no gastar cuota de ScreenScraper en lo que ya está bien."
 },
 en: {
   meta_title: "KukoScrapingFree — ROM scraper for Batocera",
@@ -265,7 +269,11 @@ en: {
   foot_desc: "Free ROM scraper for Batocera Linux: box art, logos, videos and game sheets from ScreenScraper.",
   foot_sections: "Sections",
   foot_project: "Project",
-  foot_releases: "All versions"
+  foot_releases: "All versions",
+  f11_t: "Per-system settings",
+  f11_d: "Each system with its own regions, media and mix template: screenshot and marquee for arcade; 3D box and Europe first for Super Nintendo.",
+  f12_t: "Scrape only what's missing",
+  f12_d: "Choose which games to scrape based on what they lack: no data, incomplete, or missing a specific image or field. It tells you how many before starting, so you don't spend ScreenScraper quota on what's already fine."
 },
 fr: {
   meta_title: "KukoScrapingFree — Scraper de ROM pour Batocera",
@@ -398,7 +406,11 @@ fr: {
   foot_desc: "Scraper de ROMs gratuit pour Batocera Linux : jaquettes, logos, vidéos et fiches de tes jeux depuis ScreenScraper.",
   foot_sections: "Sections",
   foot_project: "Projet",
-  foot_releases: "Toutes les versions"
+  foot_releases: "Toutes les versions",
+  f11_t: "Réglages par système",
+  f11_d: "Chaque système avec ses propres régions, médias et modèle de mix : capture et marquee pour l'arcade ; boîte 3D et Europe d'abord pour la Super Nintendo.",
+  f12_t: "Scraper seulement ce qui manque",
+  f12_d: "Choisis quels jeux scraper selon ce qui leur manque : sans données, incomplets ou sans une image ou une donnée précise. Il t'indique combien avant de commencer, pour ne pas gaspiller le quota ScreenScraper."
 },
 de: {
   meta_title: "KukoScrapingFree — ROM-Scraper für Batocera",
@@ -531,7 +543,11 @@ de: {
   foot_desc: "Kostenloser ROM-Scraper für Batocera Linux: Cover, Logos, Videos und Spielblätter von ScreenScraper.",
   foot_sections: "Bereiche",
   foot_project: "Projekt",
-  foot_releases: "Alle Versionen"
+  foot_releases: "Alle Versionen",
+  f11_t: "Einstellungen pro System",
+  f11_d: "Jedes System mit eigenen Regionen, Medien und Mix-Vorlage: Screenshot und Marquee für Arcade; 3D-Box und Europa zuerst für Super Nintendo.",
+  f12_t: "Nur Fehlendes scrapen",
+  f12_d: "Wähle, welche Spiele gescrapt werden, je nachdem was ihnen fehlt: keine Daten, unvollständig oder ein bestimmtes Bild bzw. Feld. Vor dem Start siehst du, wie viele es sind – so verschwendest du kein ScreenScraper-Kontingent."
 },
 pt: {
   meta_title: "KukoScrapingFree — Scraper de ROMs para Batocera",
@@ -664,7 +680,11 @@ pt: {
   foot_desc: "Scraper de ROMs gratuito para Batocera Linux: capas, logótipos, vídeos e fichas dos teus jogos a partir do ScreenScraper.",
   foot_sections: "Secções",
   foot_project: "Projeto",
-  foot_releases: "Todas as versões"
+  foot_releases: "Todas as versões",
+  f11_t: "Definições por sistema",
+  f11_d: "Cada sistema com as suas próprias regiões, média e modelo de mix: captura e marquee no arcade; caixa 3D e Europa primeiro na Super Nintendo.",
+  f12_t: "Scraping só do que falta",
+  f12_d: "Escolhe que jogos fazer scraping conforme o que lhes falta: sem dados, incompletos ou sem uma imagem ou um dado concreto. Antes de começar diz-te quantos são, para não gastares quota do ScreenScraper."
 },
 ru: {
   meta_title: "KukoScrapingFree — скрапер ROM для Batocera",
@@ -797,7 +817,11 @@ ru: {
   foot_desc: "Бесплатный скрапер ROM для Batocera Linux: обложки, логотипы, видео и карточки игр из ScreenScraper.",
   foot_sections: "Разделы",
   foot_project: "Проект",
-  foot_releases: "Все версии"
+  foot_releases: "Все версии",
+  f11_t: "Настройки по системам",
+  f11_d: "У каждой системы свои регионы, медиа и шаблон микса: для аркад — скриншот и marquee, для Super Nintendo — 3D-коробка и сначала Европа.",
+  f12_t: "Скрапить только недостающее",
+  f12_d: "Выберите, какие игры скрапить, по тому, чего им не хватает: без данных, неполные или без конкретного изображения или поля. Перед началом программа покажет, сколько их, чтобы не тратить квоту ScreenScraper."
 },
 it: {
   meta_title: "KukoScrapingFree — Scraper di ROM per Batocera",
@@ -930,6 +954,10 @@ it: {
   foot_desc: "Scraper di ROM gratuito per Batocera Linux: copertine, loghi, video e schede dei tuoi giochi da ScreenScraper.",
   foot_sections: "Sezioni",
   foot_project: "Progetto",
-  foot_releases: "Tutte le versioni"
+  foot_releases: "Tutte le versioni",
+  f11_t: "Impostazioni per sistema",
+  f11_d: "Ogni sistema con regioni, media e modello di mix propri: per l'arcade schermata e marquee; per il Super Nintendo scatola 3D ed Europa per prima.",
+  f12_t: "Scraping solo di ciò che manca",
+  f12_d: "Scegli quali giochi elaborare in base a ciò che manca: senza dati, incompleti o senza un'immagine o un dato preciso. Prima di iniziare ti dice quanti sono, così non sprechi quota di ScreenScraper."
 }
 };
