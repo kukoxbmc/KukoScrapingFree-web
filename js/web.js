@@ -349,6 +349,7 @@
           if (!fecha && version && rel.tag_name === "v" + version && rel.published_at) fecha = new Date(rel.published_at);
           (rel.assets || []).forEach(function (a) {
             var n = (a.name || "").toLowerCase();
+            if (!/\.zip$/.test(n)) return;              // solo los zips (no las listas de integridad)
             if (n.indexOf("-windows") >= 0) w += a.download_count || 0;
             else if (n.indexOf("-linux") >= 0) l += a.download_count || 0;
           });

@@ -136,7 +136,9 @@ es: {
   f11_t: "Ajustes por sistema",
   f11_d: "Cada sistema con sus propias regiones, medios y plantilla de mix: en arcade, captura y marquesina; en Super Nintendo, caja 3D y Europa primero.",
   f12_t: "Scrapear solo lo que falta",
-  f12_d: "Elige qué juegos scrapear según lo que les falta: sin datos, incompletos o sin una imagen o un dato concreto. Antes de empezar te dice cuántos son, para no gastar cuota de ScreenScraper en lo que ya está bien."
+  f12_d: "Elige qué juegos scrapear según lo que les falta: sin datos, incompletos o sin una imagen o un dato concreto. Antes de empezar te dice cuántos son, para no gastar cuota de ScreenScraper en lo que ya está bien.",
+  q10: "¿Cómo sé que mi copia es la original?",
+  a10: "Desde la versión 0.5.48, el programa compara sus ficheros con la lista oficial publicada en GitHub. En Ayuda › Acerca de verás «✔ Copia original verificada». Si alguien la ha modificado o está dañada, te avisa y te ofrece descargar la original. En Descargar tienes también la huella SHA-256 de cada zip."
 },
 en: {
   meta_title: "KukoScrapingFree — ROM scraper for Batocera",
@@ -273,7 +275,9 @@ en: {
   f11_t: "Per-system settings",
   f11_d: "Each system with its own regions, media and mix template: screenshot and marquee for arcade; 3D box and Europe first for Super Nintendo.",
   f12_t: "Scrape only what's missing",
-  f12_d: "Choose which games to scrape based on what they lack: no data, incomplete, or missing a specific image or field. It tells you how many before starting, so you don't spend ScreenScraper quota on what's already fine."
+  f12_d: "Choose which games to scrape based on what they lack: no data, incomplete, or missing a specific image or field. It tells you how many before starting, so you don't spend ScreenScraper quota on what's already fine.",
+  q10: "How do I know my copy is the original?",
+  a10: "Since version 0.5.48, the program compares its files with the official list published on GitHub. In Help › About you'll see «✔ Verified original copy». If someone modified it or it's damaged, it warns you and offers to download the original. The Download page also shows each zip's SHA-256 fingerprint."
 },
 fr: {
   meta_title: "KukoScrapingFree — Scraper de ROM pour Batocera",
@@ -410,7 +414,9 @@ fr: {
   f11_t: "Réglages par système",
   f11_d: "Chaque système avec ses propres régions, médias et modèle de mix : capture et marquee pour l'arcade ; boîte 3D et Europe d'abord pour la Super Nintendo.",
   f12_t: "Scraper seulement ce qui manque",
-  f12_d: "Choisis quels jeux scraper selon ce qui leur manque : sans données, incomplets ou sans une image ou une donnée précise. Il t'indique combien avant de commencer, pour ne pas gaspiller le quota ScreenScraper."
+  f12_d: "Choisis quels jeux scraper selon ce qui leur manque : sans données, incomplets ou sans une image ou une donnée précise. Il t'indique combien avant de commencer, pour ne pas gaspiller le quota ScreenScraper.",
+  q10: "Comment savoir si ma copie est l'originale ?",
+  a10: "Depuis la version 0.5.48, le programme compare ses fichiers à la liste officielle publiée sur GitHub. Dans Aide › À propos, tu verras «✔ Copie originale vérifiée». Si quelqu'un l'a modifiée ou si elle est endommagée, il te prévient et te propose de télécharger l'originale. La page Télécharger affiche aussi l'empreinte SHA-256 de chaque zip."
 },
 de: {
   meta_title: "KukoScrapingFree — ROM-Scraper für Batocera",
@@ -547,7 +553,9 @@ de: {
   f11_t: "Einstellungen pro System",
   f11_d: "Jedes System mit eigenen Regionen, Medien und Mix-Vorlage: Screenshot und Marquee für Arcade; 3D-Box und Europa zuerst für Super Nintendo.",
   f12_t: "Nur Fehlendes scrapen",
-  f12_d: "Wähle, welche Spiele gescrapt werden, je nachdem was ihnen fehlt: keine Daten, unvollständig oder ein bestimmtes Bild bzw. Feld. Vor dem Start siehst du, wie viele es sind – so verschwendest du kein ScreenScraper-Kontingent."
+  f12_d: "Wähle, welche Spiele gescrapt werden, je nachdem was ihnen fehlt: keine Daten, unvollständig oder ein bestimmtes Bild bzw. Feld. Vor dem Start siehst du, wie viele es sind – so verschwendest du kein ScreenScraper-Kontingent.",
+  q10: "Woran erkenne ich, dass meine Kopie das Original ist?",
+  a10: "Seit Version 0.5.48 vergleicht das Programm seine Dateien mit der offiziellen Liste auf GitHub. Unter Hilfe › Über siehst du «✔ Originalkopie bestätigt». Wurde sie verändert oder ist sie beschädigt, warnt es dich und bietet das Original zum Download an. Auf der Download-Seite steht außerdem der SHA-256-Fingerabdruck jedes Zips."
 },
 pt: {
   meta_title: "KukoScrapingFree — Scraper de ROMs para Batocera",
@@ -684,7 +692,9 @@ pt: {
   f11_t: "Definições por sistema",
   f11_d: "Cada sistema com as suas próprias regiões, média e modelo de mix: captura e marquee no arcade; caixa 3D e Europa primeiro na Super Nintendo.",
   f12_t: "Scraping só do que falta",
-  f12_d: "Escolhe que jogos fazer scraping conforme o que lhes falta: sem dados, incompletos ou sem uma imagem ou um dado concreto. Antes de começar diz-te quantos são, para não gastares quota do ScreenScraper."
+  f12_d: "Escolhe que jogos fazer scraping conforme o que lhes falta: sem dados, incompletos ou sem uma imagem ou um dado concreto. Antes de começar diz-te quantos são, para não gastares quota do ScreenScraper.",
+  q10: "Como sei que a minha cópia é a original?",
+  a10: "Desde a versão 0.5.48, o programa compara os seus ficheiros com a lista oficial publicada no GitHub. Em Ajuda › Acerca de verás «✔ Cópia original verificada». Se alguém a modificou ou está danificada, avisa-te e oferece-te a original. Na página Transferir tens também a impressão digital SHA-256 de cada zip."
 },
 ru: {
   meta_title: "KukoScrapingFree — скрапер ROM для Batocera",
@@ -821,7 +831,9 @@ ru: {
   f11_t: "Настройки по системам",
   f11_d: "У каждой системы свои регионы, медиа и шаблон микса: для аркад — скриншот и marquee, для Super Nintendo — 3D-коробка и сначала Европа.",
   f12_t: "Скрапить только недостающее",
-  f12_d: "Выберите, какие игры скрапить, по тому, чего им не хватает: без данных, неполные или без конкретного изображения или поля. Перед началом программа покажет, сколько их, чтобы не тратить квоту ScreenScraper."
+  f12_d: "Выберите, какие игры скрапить, по тому, чего им не хватает: без данных, неполные или без конкретного изображения или поля. Перед началом программа покажет, сколько их, чтобы не тратить квоту ScreenScraper.",
+  q10: "Как узнать, что моя копия оригинальная?",
+  a10: "Начиная с версии 0.5.48 программа сравнивает свои файлы с официальным списком на GitHub. В меню Справка › О программе вы увидите «✔ Оригинальная копия подтверждена». Если копию кто-то изменил или она повреждена, программа предупредит и предложит скачать оригинал. На странице «Скачать» также указан отпечаток SHA-256 каждого zip."
 },
 it: {
   meta_title: "KukoScrapingFree — Scraper di ROM per Batocera",
@@ -958,6 +970,8 @@ it: {
   f11_t: "Impostazioni per sistema",
   f11_d: "Ogni sistema con regioni, media e modello di mix propri: per l'arcade schermata e marquee; per il Super Nintendo scatola 3D ed Europa per prima.",
   f12_t: "Scraping solo di ciò che manca",
-  f12_d: "Scegli quali giochi elaborare in base a ciò che manca: senza dati, incompleti o senza un'immagine o un dato preciso. Prima di iniziare ti dice quanti sono, così non sprechi quota di ScreenScraper."
+  f12_d: "Scegli quali giochi elaborare in base a ciò che manca: senza dati, incompleti o senza un'immagine o un dato preciso. Prima di iniziare ti dice quanti sono, così non sprechi quota di ScreenScraper.",
+  q10: "Come so che la mia copia è l'originale?",
+  a10: "Dalla versione 0.5.48 il programma confronta i suoi file con l'elenco ufficiale pubblicato su GitHub. In Aiuto › Informazioni vedrai «✔ Copia originale verificata». Se qualcuno l'ha modificata o è danneggiata, ti avvisa e ti propone di scaricare l'originale. Nella pagina Scarica trovi anche l'impronta SHA-256 di ogni zip."
 }
 };
