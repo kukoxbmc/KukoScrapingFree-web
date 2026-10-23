@@ -150,6 +150,7 @@ es: {
   f18_t: "Envía a Batocera con red de seguridad", f18_d: "Un botón lleva a la carpeta de ROMs lo que has descargado. Antes pregunta, guarda una copia fechada del gamelist.xml de Batocera (nunca se borra) y te deja comparar cada imagen o vídeo que sustituiría a otro.",
   f19_t: "SteamGridDB como segunda fuente", f19_d: "Si ScreenScraper no tiene la portada, el logo o el fondo, el programa los busca en SteamGridDB con tu clave gratuita, y te propone coincidencias para los juegos que no encontró.",
   f20_t: "Sistemas por tipo y con buscador", f20_d: "La lista de sistemas va agrupada en recreativas, consolas, ordenadores y portátiles, que se pliegan y despliegan, con un buscador para ir directo al que quieres.",
+  f21_t: "ROMs nuevas, solo esas", f21_d: "Al abrir o reescanear te avisa de las ROMs que has añadido desde la última vez y te ofrece scrapear solo esas.", f22_t: "Juegos duplicados", f22_d: "Encuentra ROMs idénticas, propone cuál conservar y oculta las demás en Batocera sin tocar ninguna ROM. Se puede deshacer.",
   q10: "¿Cómo sé que mi copia es la original?",
   a10: "Desde la versión 0.5.48, el programa compara sus ficheros con la lista oficial publicada en GitHub. En Ayuda › Acerca de verás «✔ Copia original verificada». Si alguien la ha modificado o está dañada, te avisa y te ofrece descargar la original. En Descargar tienes también la huella SHA-256 de cada zip."
 },
@@ -302,6 +303,7 @@ en: {
   f18_t: "Send to Batocera with a safety net", f18_d: "One button moves what you've downloaded to the ROMs folder. It asks first, saves a dated copy of Batocera's gamelist.xml (never deleted) and lets you compare every image or video that would replace another.",
   f19_t: "SteamGridDB as a second source", f19_d: "If ScreenScraper lacks the cover, logo or background, the program looks for them on SteamGridDB with your free key, and suggests matches for the games it didn't find.",
   f20_t: "Systems by type, with search", f20_d: "The systems list is grouped into arcade, consoles, computers and handhelds that fold and unfold, with a search box to jump straight to the one you want.",
+  f21_t: "New ROMs, only those", f21_d: "On opening or rescanning it tells you which ROMs you added since last time and offers to scrape only those.", f22_t: "Duplicate games", f22_d: "Finds identical ROMs, suggests which to keep and hides the others in Batocera without touching any ROM. It can be undone.",
   q10: "How do I know my copy is the original?",
   a10: "Since version 0.5.48, the program compares its files with the official list published on GitHub. In Help › About you'll see «✔ Verified original copy». If someone modified it or it's damaged, it warns you and offers to download the original. The Download page also shows each zip's SHA-256 fingerprint."
 },
@@ -454,6 +456,7 @@ fr: {
   f18_t: "Envoyez vers Batocera avec un filet de sécurité", f18_d: "Un bouton place dans le dossier des ROM ce que vous avez téléchargé. Il demande d'abord, enregistre une copie datée du gamelist.xml de Batocera (jamais supprimé) et vous laisse comparer chaque image ou vidéo qui en remplacerait une autre.",
   f19_t: "SteamGridDB comme seconde source", f19_d: "Si ScreenScraper n'a pas la jaquette, le logo ou le fond, le programme les cherche sur SteamGridDB avec votre clé gratuite, et propose des correspondances pour les jeux qu'il n'a pas trouvés.",
   f20_t: "Systèmes par type, avec recherche", f20_d: "La liste des systèmes est groupée en arcade, consoles, ordinateurs et portables, que l'on replie et déplie, avec une recherche pour aller droit à celui que vous voulez.",
+  f21_t: "Nouvelles ROM, seulement celles-là", f21_d: "À l'ouverture ou au nouveau scan, il te signale les ROM ajoutées depuis la dernière fois et te propose de ne scraper que celles-là.", f22_t: "Jeux en double", f22_d: "Trouve les ROM identiques, propose laquelle garder et masque les autres dans Batocera sans toucher aucune ROM. Réversible.",
   q10: "Comment savoir si ma copie est l'originale ?",
   a10: "Depuis la version 0.5.48, le programme compare ses fichiers à la liste officielle publiée sur GitHub. Dans Aide › À propos, tu verras «✔ Copie originale vérifiée». Si quelqu'un l'a modifiée ou si elle est endommagée, il te prévient et te propose de télécharger l'originale. La page Télécharger affiche aussi l'empreinte SHA-256 de chaque zip."
 },
@@ -606,6 +609,7 @@ de: {
   f18_t: "An Batocera senden – mit Sicherheitsnetz", f18_d: "Ein Klick legt das Heruntergeladene in den ROM-Ordner. Zuerst wird gefragt, eine datierte Kopie von Batoceras gamelist.xml gespeichert (nie gelöscht) und du kannst jedes Bild oder Video vergleichen, das ein anderes ersetzen würde.",
   f19_t: "SteamGridDB als zweite Quelle", f19_d: "Fehlen bei ScreenScraper das Cover, das Logo oder der Hintergrund, sucht das Programm sie mit deinem kostenlosen Schlüssel bei SteamGridDB und schlägt Treffer für nicht gefundene Spiele vor.",
   f20_t: "Systeme nach Typ, mit Suche", f20_d: "Die Systemliste ist nach Arcade, Konsolen, Computern und Handhelds gruppiert, auf- und zuklappbar, mit einer Suche, um direkt zum gewünschten System zu springen.",
+  f21_t: "Neue ROMs, nur diese", f21_d: "Beim Öffnen oder erneuten Scannen meldet es die seit dem letzten Mal hinzugekommenen ROMs und bietet an, nur diese zu scrapen.", f22_t: "Doppelte Spiele", f22_d: "Findet identische ROMs, schlägt vor, welche behalten wird, und versteckt die anderen in Batocera, ohne eine ROM anzufassen. Rückgängig machbar.",
   q10: "Woran erkenne ich, dass meine Kopie das Original ist?",
   a10: "Seit Version 0.5.48 vergleicht das Programm seine Dateien mit der offiziellen Liste auf GitHub. Unter Hilfe › Über siehst du «✔ Originalkopie bestätigt». Wurde sie verändert oder ist sie beschädigt, warnt es dich und bietet das Original zum Download an. Auf der Download-Seite steht außerdem der SHA-256-Fingerabdruck jedes Zips."
 },
@@ -758,6 +762,7 @@ pt: {
   f18_t: "Envie para o Batocera com rede de segurança", f18_d: "Um botão leva para a pasta de ROMs o que transferiu. Primeiro pergunta, guarda uma cópia datada do gamelist.xml do Batocera (nunca é apagado) e deixa comparar cada imagem ou vídeo que substituiria outro.",
   f19_t: "SteamGridDB como segunda fonte", f19_d: "Se o ScreenScraper não tiver a capa, o logótipo ou o fundo, o programa procura-os no SteamGridDB com a sua chave gratuita e sugere correspondências para os jogos que não encontrou.",
   f20_t: "Sistemas por tipo, com pesquisa", f20_d: "A lista de sistemas está agrupada em arcade, consolas, computadores e portáteis, que se recolhem e expandem, com uma pesquisa para ir direto ao que quer.",
+  f21_t: "ROMs novas, só essas", f21_d: "Ao abrir ou reexaminar, avisa das ROMs adicionadas desde a última vez e oferece obter dados só dessas.", f22_t: "Jogos duplicados", f22_d: "Encontra ROMs idênticas, propõe qual manter e oculta as outras no Batocera sem tocar em nenhuma ROM. Pode desfazer-se.",
   q10: "Como sei que a minha cópia é a original?",
   a10: "Desde a versão 0.5.48, o programa compara os seus ficheiros com a lista oficial publicada no GitHub. Em Ajuda › Acerca de verás «✔ Cópia original verificada». Se alguém a modificou ou está danificada, avisa-te e oferece-te a original. Na página Transferir tens também a impressão digital SHA-256 de cada zip."
 },
@@ -910,6 +915,7 @@ ru: {
   f18_t: "Отправка в Batocera со страховкой", f18_d: "Одна кнопка переносит скачанное в папку ROM. Сначала программа спрашивает, сохраняет копию gamelist.xml Batocera с датой (он никогда не удаляется) и даёт сравнить каждое изображение или видео, которое заменит другое.",
   f19_t: "SteamGridDB как второй источник", f19_d: "Если в ScreenScraper нет обложки, логотипа или фона, программа ищет их в SteamGridDB по вашему бесплатному ключу и предлагает совпадения для ненайденных игр.",
   f20_t: "Системы по типам и с поиском", f20_d: "Список систем сгруппирован на аркады, консоли, компьютеры и портативные; группы сворачиваются и разворачиваются, а поиск ведёт сразу к нужной системе.",
+  f21_t: "Новые ROM — только они", f21_d: "При запуске или повторном сканировании сообщает о ROM, добавленных с прошлого раза, и предлагает получить данные только для них.", f22_t: "Дубликаты игр", f22_d: "Находит одинаковые ROM, предлагает, какую оставить, и скрывает остальные в Batocera, не трогая ни одной ROM. Можно отменить.",
   q10: "Как узнать, что моя копия оригинальная?",
   a10: "Начиная с версии 0.5.48 программа сравнивает свои файлы с официальным списком на GitHub. В меню Справка › О программе вы увидите «✔ Оригинальная копия подтверждена». Если копию кто-то изменил или она повреждена, программа предупредит и предложит скачать оригинал. На странице «Скачать» также указан отпечаток SHA-256 каждого zip."
 },
@@ -1062,6 +1068,7 @@ it: {
   f18_t: "Invia a Batocera con rete di sicurezza", f18_d: "Un pulsante porta nella cartella delle ROM ciò che hai scaricato. Prima chiede, salva una copia datata del gamelist.xml di Batocera (mai cancellato) e ti lascia confrontare ogni immagine o video che ne sostituirebbe un altro.",
   f19_t: "SteamGridDB come seconda fonte", f19_d: "Se ScreenScraper non ha la copertina, il logo o lo sfondo, il programma li cerca su SteamGridDB con la tua chiave gratuita e propone corrispondenze per i giochi non trovati.",
   f20_t: "Sistemi per tipo, con ricerca", f20_d: "L'elenco dei sistemi è raggruppato in arcade, console, computer e portatili, che si comprimono e si espandono, con una ricerca per andare dritto a quello che vuoi.",
+  f21_t: "ROM nuove, solo quelle", f21_d: "All'apertura o alla nuova scansione indica le ROM aggiunte dall'ultima volta e propone di fare lo scraping solo di quelle.", f22_t: "Giochi duplicati", f22_d: "Trova ROM identiche, propone quale tenere e nasconde le altre in Batocera senza toccare nessuna ROM. Si può annullare.",
   q10: "Come so che la mia copia è l'originale?",
   a10: "Dalla versione 0.5.48 il programma confronta i suoi file con l'elenco ufficiale pubblicato su GitHub. In Aiuto › Informazioni vedrai «✔ Copia originale verificata». Se qualcuno l'ha modificata o è danneggiata, ti avvisa e ti propone di scaricare l'originale. Nella pagina Scarica trovi anche l'impronta SHA-256 di ogni zip."
 }
