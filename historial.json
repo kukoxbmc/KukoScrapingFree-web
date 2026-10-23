@@ -1,5 +1,38 @@
 [
  {
+  "version": "0.5.54",
+  "novedades": {
+   "es": [
+    "Nuevo: aviso de ROMs nuevas. Al abrir el programa y al reescanear te avisa de las ROMs que has añadido desde la última vez y te ofrece scrapear solo esas (la primera vez solo apunta lo que hay). También en Herramientas › «Buscar ROMs nuevas…». El aviso automático se puede desactivar en Ajustes.",
+    "Nuevo: Herramientas › «Buscar juegos duplicados…». Encuentra ROMs idénticas (misma huella) dentro de cada sistema, propone cuál conservar (la que ya tiene datos o partidas, la de tu región preferida, la más limpia) y oculta las demás en el gamelist: Batocera no las muestra pero las ROM no se tocan y se puede deshacer. Calcula las huellas que falten y exporta la lista a CSV."
+   ],
+   "en": [
+    "New: new-ROMs notice. When opening the program and on rescan it tells you which ROMs you added since last time and offers to scrape only those (the first time it just records what is there). Also in Tools › «Look for new ROMs…». The automatic notice can be turned off in Settings.",
+    "New: Tools › «Find duplicate games…». Finds identical ROMs (same fingerprint) within each system, suggests which to keep (the one with data or play history, your preferred region, the cleanest) and hides the others in the gamelist: Batocera doesn't show them but the ROMs are untouched and it can be undone. Calculates any missing fingerprints and exports the list to CSV."
+   ],
+   "fr": [
+    "Nouveau : avis de nouvelles ROM. À l'ouverture du programme et au nouveau scan, il t'indique les ROM ajoutées depuis la dernière fois et te propose de ne scraper que celles-là (la première fois, il note seulement ce qui existe). Aussi dans Outils › «Chercher les nouvelles ROM…». L'avis automatique se désactive dans les Réglages.",
+    "Nouveau : Outils › «Chercher les jeux en double…». Trouve les ROM identiques (même empreinte) dans chaque système, propose laquelle garder (celle qui a des données ou des parties, ta région préférée, la plus propre) et masque les autres dans le gamelist : Batocera ne les affiche pas, mais les ROM ne sont pas touchées et c'est réversible. Calcule les empreintes manquantes et exporte la liste en CSV."
+   ],
+   "de": [
+    "Neu: Hinweis auf neue ROMs. Beim Öffnen des Programms und beim erneuten Scannen meldet es die seit dem letzten Mal hinzugekommenen ROMs und bietet an, nur diese zu scrapen (beim ersten Mal wird nur gemerkt, was vorhanden ist). Auch unter Werkzeuge › «Nach neuen ROMs suchen…». Der automatische Hinweis lässt sich in den Einstellungen ausschalten.",
+    "Neu: Werkzeuge › «Doppelte Spiele suchen…». Findet identische ROMs (gleicher Fingerabdruck) innerhalb jedes Systems, schlägt vor, welche behalten wird (die mit Daten oder Spielständen, deine bevorzugte Region, die sauberste), und versteckt die anderen in der Gamelist: Batocera zeigt sie nicht an, die ROMs bleiben unangetastet und es lässt sich rückgängig machen. Berechnet fehlende Fingerabdrücke und exportiert die Liste als CSV."
+   ],
+   "pt": [
+    "Novo: aviso de ROMs novas. Ao abrir o programa e ao reexaminar, avisa das ROMs adicionadas desde a última vez e oferece obter dados só dessas (na primeira vez só regista o que existe). Também em Ferramentas › «Procurar ROMs novas…». O aviso automático pode desativar-se nas Definições.",
+    "Novo: Ferramentas › «Procurar jogos duplicados…». Encontra ROMs idênticas (mesma impressão digital) dentro de cada sistema, propõe qual manter (a que tem dados ou partidas, a da sua região preferida, a mais limpa) e oculta as outras no gamelist: o Batocera não as mostra, mas as ROMs não são tocadas e pode desfazer-se. Calcula as impressões digitais em falta e exporta a lista para CSV."
+   ],
+   "ru": [
+    "Новое: уведомление о новых ROM. При запуске и при повторном сканировании программа сообщает о ROM, добавленных с прошлого раза, и предлагает получить данные только для них (в первый раз она лишь запоминает, что есть). Также в меню Инструменты › «Найти новые ROM…». Автоматическое уведомление отключается в Настройках.",
+    "Новое: Инструменты › «Найти дубликаты игр…». Находит одинаковые ROM (с тем же отпечатком) внутри каждой системы, предлагает, какую оставить (с данными или сыгранными партиями, из предпочитаемого региона, самую «чистую»), и скрывает остальные в gamelist: Batocera их не показывает, ROM не затрагиваются, действие можно отменить. Вычисляет недостающие отпечатки и экспортирует список в CSV."
+   ],
+   "it": [
+    "Novità: avviso di ROM nuove. All'apertura del programma e alla nuova scansione ti indica le ROM aggiunte dall'ultima volta e propone di fare lo scraping solo di quelle (la prima volta annota soltanto ciò che c'è). Anche in Strumenti › «Cerca ROM nuove…». L'avviso automatico si disattiva nelle Impostazioni.",
+    "Novità: Strumenti › «Cerca giochi duplicati…». Trova ROM identiche (stessa impronta) all'interno di ogni sistema, propone quale tenere (quella con dati o partite, la tua regione preferita, la più pulita) e nasconde le altre nel gamelist: Batocera non le mostra, le ROM non vengono toccate e si può annullare. Calcola le impronte mancanti ed esporta l'elenco in CSV."
+   ]
+  }
+ },
+ {
   "version": "0.5.53",
   "novedades": {
    "es": [
